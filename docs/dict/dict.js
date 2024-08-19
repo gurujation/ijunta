@@ -35,7 +35,6 @@ $(document).ready(function() {
 
 	Papa.parse('dict.csv', {
 		download: true,
-		delimiter: '|',
 		skipEmptyLines: true,
 		complete: function(results) {
 			dictionary = results.data;
