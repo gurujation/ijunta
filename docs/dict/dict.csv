@@ -5,7 +5,7 @@ da,"that, there"
 daki,that who/which/where (complementizer)
 dale,those
 de,"from, of, about, by"
-deke,"that which, "
+deke,"of that, about which"
 den,du + en = was in
 di,"this, here"
 diale,these
@@ -49,9 +49,9 @@ pero,"but, except"
 po,"for, as"
 "-re, -ure",(mark a verb as passive voice)
 "-ro, -ero","(marker of a person with a role or profession, eg sanoro = doctor)"
-sama,"as, than, like"
+sama,"as, than, like, similar (as adjective)"
 se,"if, whether"
-se â€¦ posi,if â€¦ then
+se … posi,if … then
 si,"he, she, it (third person)"
 siale,they
 sialo,their
@@ -103,7 +103,7 @@ itole,"people, humans"
 jalan,"path, way, road, street"
 jelu,"cool, cold"
 junta,"join, group, together"
-jura,"law, rule, instruction"
+jura,"law, judge (v), rule, instruction"
 kaja,box
 kaka,"feces, s***"
 kali,"dark, black"
@@ -136,7 +136,7 @@ nomi,"name, word"
 non,none (of)
 nota,"write, a writing"
 novi,"interesting, weird, strange (use -ma for miracle, rare)"
-novito,"stranger, guest"
+novito,"interesting, weird, strange (use -ma for miracle, rare)"
 nu,new
 nula,"nothing, zero"
 opesa,"money, wealth, riches"
@@ -144,7 +144,7 @@ ota,"other, different"
 pan,bread
 papa,father
 pasa,"pass, happen, past"
-pensa,"think, thought"
+pensa,"think, thought, belief"
 peso,"piece, part, component"
 poten,"power, force, strong, loud"
 rapi,"fast, speed, quickly"
@@ -220,7 +220,7 @@ ara,"bee, hornet, wasp"
 araki,"spider, arachnid"
 asela,"wing, vane, ascender"
 asensi,climb
-atigo,"reach, contact, connect"
+atigo,"reach, contact, connect, achieve"
 ato,"act, performance, behavior, active"
 atolo,"float, buoy, buoyant, a float"
 atomo,"individual, distinct, atom, atomic"
@@ -247,12 +247,12 @@ bileta,"ticket, a pass, bill, banknote"
 bira,"beer, ale"
 boba,"bubble, boil"
 bola,bowl
-bonveni,"welcome (lit. good comings!"")"""
+bonveni,"welcome (lit. ""good comings!"")"
 bovi,"cow, bovine, steer, ox, bison, buffalo"
 bubo,owl
 buku,book
 danke,"thanks, to thank, thankful"
-dara,"stand, place, be firm"
+dara,"stand, place, be firm, position"
 debile,"weak, weakness, feeble, sick"
 dedua,"between, inter-"
 dekera,"right (direction + moral + legal), straight, orthodox"
@@ -298,6 +298,7 @@ enemi,"enemy, nemesis"
 enfugo,"hell, damn, hellish"
 entero,"insides, intestines, bowel, entrails, gut"
 enum,"pot, pan, cauldron, crucible, saucepan, kettle"
+enumu,"impress, express, intuit, impact"
 envasa,"dive, plunge, submerge"
 envi,"envy, jealous"
 ere,"oar, rudder, to row"
@@ -329,8 +330,10 @@ fonte,"fountain, spring, well"
 foreta,forest
 fosi,"dig, bury"
 fugaja,"oven, furnace, heater"
+fugolumen,fireworks
 fuji,"flee, escape, run away"
 funda,"base, foundation, ground, floor, basis, fundamental"
+fundo,"scatter, shed, pour out"
 fungi,"fungus, mold, mildew"
 furi,"anger, mad, furious"
 gam,gram (SI)
@@ -350,6 +353,7 @@ imbe,"rain, storm"
 impedi,"barrage, dam, block, impede, obstruct, hinder"
 imperi,"command, imperative, rule, empire, imperial"
 impono,"impose, insert, thrust, copulate, f***"
+impoto,"important, main, principal, dominant, supreme"
 infan,"dumb, mute, foolish"
 inkase,"prison, jail, imprison"
 ino,swim
@@ -357,6 +361,7 @@ inseto,"insect, bug, pest, bother"
 intera,"as long as, while, meanwhile"
 intero,"examine, investigate, trace"
 inunda,"flood, torrent, inundate, overwhelm, overwhelming"
+iosa,"entitle, justify, right, merit"
 jage,"search, hunt, pursuit, seek, quest"
 janji,"answer, promise, vow, pledge, swear"
 janu,"door, gate"
@@ -369,6 +374,7 @@ jin,"gold, golden"
 jira,"turn, gyrate, spin, whirl"
 joku,"joke, jest"
 joli,"happy, joy, frolic, enjoy"
+junkore,"agree, consent, admit, grant"
 juve,"cheek, jowl"
 juse,until
 kabon,"carbon, coal"
@@ -390,6 +396,8 @@ kani,dog
 kanta,"letter, literature, character, spell, spelling, literary"
 kanti,"sing, song, tune, melody"
 kapa,"capture, catch, seize, grasp, captive, grab, pick, collect"
+kapani,"subject (thing), topic, theme"
+kaparo,"subject (person), subordinate, employee"
 kaparuse,trap
 kara,"meat, flesh"
 kare,"lose, loss"
@@ -422,6 +430,7 @@ kitum,"excited, aroused"
 koda,"end, tail, coda"
 kodo,"because, since"
 kogito,"design, sketch, blueprint, pattern"
+kofundo,"mix, mingle, combine"
 koke,"each, respectively"
 kolenka,knee
 koli,"hill, mountain"
@@ -486,6 +495,7 @@ malum,"fate, destiny"
 mandi,"jaw, mandible"
 mare,"ocean, sea, marine"
 masa,"mass, pile, heap, amass, massive"
+masafigura,"information, message"
 masama,"bigger, more than, expanded, extra"
 medele,"smaller, less of"
 medi,"average, medium, normal, usual, standard, norm, middle, noon"
@@ -493,6 +503,7 @@ medidu,"enough, sufficient"
 mela,honey
 mendasi,"lie, false, deceive, deception"
 meno,"less (comparison), fewer, minus"
+menola,"negative, ineffectual, wasteful, destructive"
 meru,"brief, short"
 midori,green
 minu,minute
@@ -505,7 +516,7 @@ moti,"mess, disorder"
 motu,"move, movement, motion, movie, travel, journey"
 mudi,"purpose, goal, objective, aim, intent, target"
 muijen,grandparent
-mundo,"world, globe, global"
+mundo,"world, globe, global, international"
 munera,"service, fee, compensation, favour"
 muro,wall
 muso,museum
@@ -576,8 +587,10 @@ posi,"later, after, following, then"
 posimedi,afternoon
 poto,"carry, transport, transfer, port, cargo"
 pove,"poor, poverty"
+pudeo,"embarrass, shame"
 puga,butt
 pule,"plus, more than (comparison), additionally"
+pulela,"positive, productive, constructive"
 punio,"punish, chastise, retaliate"
 punto,"point (at), dot, spot, indicate, pointy, sharp"
 pupe,"doll, puppet, pet"
@@ -615,6 +628,7 @@ salo,"salt, salty, seasoning"
 salu,"hello, greet, greeting, salute"
 sange,"blood, bleed"
 sano,"health, healthy, heal"
+sanomanja,"medicine, tablets"
 sapiro,"breathe, breath"
 sakin,"bag, luggage, sack, burden"
 sati,"full, fill, whole"
@@ -672,6 +686,7 @@ tenu,"narrow, thin, strait"
 tetum,"ceiling, roof"
 tingi,"high, tall, height"
 tipo,"type, quality, kind, typical"
+tiponi,"example, specimen"
 tira,"pull, tug"
 tivi,"TV, television"
 tore,"tower, skyscraper, turret, steeple, minaret"
@@ -686,7 +701,7 @@ ujana,"young, youth, a youth"
 ukite,"forgive, renounce, dismiss"
 umbe,"shadow, shade, obscure, hide, hidden"
 umero,"shoulder, shrug"
-umu,"low, bottom, depressed"
+umu,"low, bottom, depressed, press"
 unda,"wave, undulation, vibrate"
 unode,"sensei, master (of), professional"
 ungu,"nail, hoof, claw"
@@ -694,12 +709,14 @@ unun,ever
 usedo,hungry
 usu,"practice, skill"
 utero,"source, genesis, womb, uterus"
+valeo,"value, strength, worth, effective"
 vani,"vain, superficial, silly, foolish, trivial"
 vapo,"steam, vapor"
 vapora,smoke
 vasum,"package, packet, cup, vase"
 vende,"sell, sale"
 venera,"respect, veneration, respectful"
+verenota,"record, register, evidence"
 vese,west
 vila,"village, town"
 vino,wine
@@ -727,3 +744,27 @@ luse o fugo,summer
 luse o foli,autumn
 luse o jelu,winter
 luse o fiore,spring (season)
+noko = nomi o kosa,noun
+nomato = nomi o atoni,verb
+nolanoko = nomi e lado nomi o kosa,adjective
+nolanomato = nomi e lado nomi o atoni,adverb
+ponoko,pronoun
+apela [Loan],apple
+bifa [Loan],beef
+Conto [Loan],Count
+fone [Loan],phone
+foto [Loan],photograph
+korusifika [Loan],crucifix
+Angelin [Loan],England
+Furansu [Loan],"France, French"
+Joje [Loan],George
+Jeman [Loan],German
+mmm [Loan],hmm
+Jonatan [Loan],Jonathan
+lada [Loan],ladder
+London [Loan],London
+Munike [Loan],Munich
+pire [Loan],pear
+pulam [Loan],plum
+susa [Loan],sous (French currency)
+Vena [Loan],Vienna
