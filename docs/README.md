@@ -13,3 +13,4 @@ Sample Ijunta texts:
 * [24601](https://github.com/gurujation/ijunta/raw/main/sources/Ijunta%20-%2024601.docx)
 * [Song Lyrics](https://github.com/gurujation/ijunta/raw/main/sources/Ijunta%20-%20Song%20Lyrics.docx)
 * [Salu Jonatan (si.1-7)](https://github.com/gurujation/ijunta/raw/main/sources/Ijunta%20-%20Salu%20Jonatan%20(si.1-7).docx)
+* [Declaration of Human Rights (articles 1-6)](https://github.com/gurujation/ijunta/raw/refs/heads/main/sources/Ijunta%20-%20Universal%20Declaration%20of%20Human%20Rights.docx)
