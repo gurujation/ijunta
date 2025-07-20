@@ -5,6 +5,7 @@ Contains official documentation about the language:
 * [Introduction to Ijunta](Introduction%20to%20Ijunta.pdf) (PDF)
 * [Word List](Ijunta%20word%20list.xlsx) (Excel)
 * [Searchable online dictionary](dict/)
+* [Biline - Interactive authoring](biline/biline.html)
 
 Sample Ijunta texts:
 * [150 canonical phrases](https://github.com/gurujation/ijunta/raw/main/sources/Ijunta%20-%20150%20canonical.xlsx)
