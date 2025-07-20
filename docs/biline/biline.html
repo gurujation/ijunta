@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biline: Multilingual Text Authoring</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/css/bootstrap.min.css" integrity="sha512-fw7f+TcMjTb7bpbLJZlP8g2Y4XcCyFZW8uy8HsRZsH/SwbMw0plKHFHr99DN3l04VsYNwvzicUX/6qurvIxbxw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.27.3/ui/trumbowyg.min.css" integrity="sha512-Fm8kRNVGCBZn0sPmwJbVXlqfJmPC13zRsMElZenX6v721g/H7OukJd8XzDEBRQ2FSATK8xNF9UYvzsCtUpfeJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body.no-js { visibility: hidden; }
+      
+      .editor-container {
+          position: relative;
+      }
+
+      #tips-parent .accordion-item, #tips-parent .accordion-button { border-radius: 0 !important; }
+      .accordion-button { padding: 6px 10px;  }
+      .accordion-item { font-size: 0.8em; }
+      .accordion-item .collapse { max-height: 50vh; overflow-y: scroll; }
+      .collapsing { -webkit-transition: none; transition: none; display: none; }
+
+      #textEditor {
+          min-height: 300px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 16px;
+          line-height: 1.5;
+          border: 2px solid #dee2e6;
+          border-radius: 8px;
+          padding: 15px;
+          resize: vertical;
+          overflow: scroll-y;
+      }
+
+      #textEditor:focus {
+          border-color: #0d6efd;
+          box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+          outline: none;
+      }
+
+      .bg-primary { background-color: #778 !important; font-weight: bold; }
+
+      .suggestions-popup {
+          position: absolute;
+          background: white;
+          border: 1px solid #ced4da;
+          border-radius: 6px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          max-width: 350px;
+          z-index: 1000;
+          display: none;
+      }
+
+      .suggestion-item {
+          padding: 8px 12px;
+          cursor: pointer;
+          border-bottom: 1px solid #f8f9fa;
+          font-size: 14px;
+      }
+
+      .suggestion-item:last-child {
+          border-bottom: none;
+      }
+
+      .suggestion-item:hover,
+      .suggestion-item.selected {
+          background-color: #e3f2fd;
+      }
+
+      .suggestion-target {
+          font-weight: bold;
+          color: #0d6efd;
+      }
+
+      .suggestion-ref {
+          color: #6c757d;
+          margin-left: 8px;
+      }
+
+      .suggestion-def {
+          color: #868e96;
+          font-size: 12px;
+          margin-top: 2px;
+          font-style: italic;
+      }
+
+      .definition-match {
+          background-color: #f8f9fa;
+          border-top: 1px solid #dee2e6;
+      }
+
+      #language-selector {
+          margin-bottom: 20px;
+      }
+
+      #copyBtn {
+          transition: all 0.2s ease;
+      }
+
+      #copyBtn:hover {
+          transform: translateY(-1px);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      #copyBtn.success {
+          background-color: #198754;
+          border-color: #198754;
+          color: white;
+      }
+
+      .status-bar {
+          font-size: 12px;
+          color: #6c757d;
+          margin-top: 10px;
+      }
+
+      .trumbowyg-box,
+      .trumbowyg-editor,
+      .trumbowyg-textarea {
+          height: 350px;
+      }
+      
+      .trumbowyg-editor[contenteditable=true]:empty::before{
+        content: attr(placeholder);
+        color: #999;
+      }      
+    </style>
+  </head>
+  <body class="no-js">
+    <div class="container mt-4">
+      <h1 class="mb-4">Biline: Multilingual Text Authoring</h1>
+
+      <div id="language-selector">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="targetLang" class="form-label">Target Language</label>
+            <select id="targetLang" class="form-select"></select>
+          </div>
+          <div class="col-md-6">
+            <label for="refLang" class="form-label">Reference Language</label>
+            <select id="refLang" class="form-select"></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="main" class="col-md-9">
+          <div class="h6 mb-2 mt-1">Editor</div>
+          <div id="textContainer" class="editor-container">
+            <div class="d-flex justify-content-between align-items-top mb-2">
+              <small class="text-muted"
+                ><span class="small">Use colon (:) prefix to search by reference language. Use underscore (_) to search compound words.</span></small>
+              <div class="d-flex">
+                <button id="clearBtn" class="btn btn-outline-primary btn-sm me-2" type="button">⌫ Clear</button>
+                <button id="copyBtn" class="btn btn-outline-primary btn-sm" type="button">📋 Copy Text</button>
+              </div>
+            </div>
+            <textarea id="textEditor" class="form-control" placeholder="Start typing..."></textarea>
+            <div id="suggestionsPopup" class="suggestions-popup"></div>
+          </div>
+
+          <div class="status-bar">
+            <span id="statusText">Ready</span> |
+            <span id="lang">N/A</span> |
+            <span id="autoSave">Not saved</span> |
+            <span id="wordCount">Words: 0</span> |
+            <span id="charCount">Characters: 0</span>
+          </div>
+          <div style="font-size: 0.8em; margin-top: 2em;">
+            <a href=".">Biline</a> © 2025 GuruJ. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          </div>
+        </div>
+        <div id="tips-container" class="col-md-3">
+          <div class="h6 mb-2 mt-1">Tips</div>
+          <div class="text-muted small mb-4"><span class="small">Click headings to expand.</small></div>
+          
+          <div class="accordion" id="tips-parent">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tips-section-1" aria-expanded="true" aria-controls="tips-section-1">
+                  Note
+                </button>
+              </h2>
+              <div id="tips-section-1" class="accordion-collapse collapse show" data-bs-parent="#tips-parent">
+                <div class="accordion-body">
+                  There is no tip text available.
+                </div>
+              </div>
+            </div>
+          </div>            
+        </div>
+      </div>      
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js" integrity="sha512-79RgNpOyaf8AvNEUdanuk1x6g53UPoB6Fh2uogMkOMGADBG6B0DCzxc+dDktXkVPg2rlxGvPeAFKoZxTycVooQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.27.3/trumbowyg.min.js" integrity="sha512-YJgZG+6o3xSc0k5wv774GS+W1gx0vuSI/kr0E0UylL/Qg/noNspPtYwHPN9q6n59CTR/uhgXfjDXLTRI+uIryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>    
+      $(document).ready(function() {
+        // OPTIONS
+        let options = {
+          defaultDictionarySource: 'dictionary',
+          updatePeriod: 3000,
+          popupDelay: 300
+        };
+        
+        // Global variables
+        let dictionary = [];
+        let tips = [];
+        let dictSource = '';
+        let textEditorObject = '#textEditor';
+        let languages = {};
+        let selectedIndex = -1;
+        let suggestions = [];
+        let currentWord = '';
+        let currentWordStart = 0;
+        let isColonSearch = false;
+        let dictionaryLoaded = false;
+        
+        // Default dictionary file can be overriden
+        parseUrlParams(); // use 'dict' param to override
+        const DICTIONARY_URL = (dictSource ? dictSource : options.defaultDictionarySource) + '.json';
+        
+        // Initialize
+        function init() {
+          loadDictionary();
+          enableRichText();
+          attachEventListeners();
+          updateStatus();
+          
+          // we show rendered canvas after short delay to ensure UI updates are made
+          setTimeout(function() { 
+            $('body').removeClass("no-js"); 
+            autoLoad();
+            $(textEditorObject).focus();
+            setInterval(() => autoSave(), options.updatePeriod);
+          }, 100);
+        }
+
+        function enableRichText() {
+          try {
+            if ($('#textEditor').trumbowyg({
+                btns: [
+                  ['viewHTML'],
+                  ['formatting'],
+                  ['strong', 'em', 'del'],
+                  ['superscript', 'subscript'],
+                  ['link'],
+                  ['unorderedList', 'orderedList'],
+                  ['removeformat']
+                ]
+              })) {
+              textEditorObject = '#textContainer .trumbowyg';
+            }
+          } catch (e) {}
+        }
+
+        function isObject(obj) {
+          var type = typeof obj;
+          return type === 'function' || type === 'object' && !!obj;
+        };
+        
+        function isSet(el) { 
+          return typeof el !== 'undefined' && el;
+        }
+
+        function isFalse(el) {
+          return el === false || el === "false";
+        }
+
+        function loadDictionary() {
+          $('#statusText').text('Loading dictionary...');
+          $.ajax({
+            url: DICTIONARY_URL,
+            type: 'GET',
+            dataType: 'json',
+            timeout: 10000,
+            success: function(data) {              
+              // parse Tips
+              if (Array.isArray(data.tips)) {
+                tips = data.tips;
+                loadTips();
+              }
+              
+              // parse dictionary
+              if (Array.isArray(data.dictionary)) {
+                dictionary = data.dictionary;
+                dictionaryLoaded = true;
+                $('#statusText').text('Dictionary loaded successfully');
+                updateStatus();
+              } else {
+                handleDictionaryError('Invalid dictionary format - expected array');
+              }
+              // now register discovered languages in dropdowns
+              parseLanguageCodes(dictionary);
+              registerLanguages();
+              
+              // parse settings
+              if (isObject(data.settings)) {                
+                if (isSet(data.settings.ref)) { $('#refLang').val(data.settings.ref); }
+                if (isSet(data.settings.target)) { $('#targetLang').val(data.settings.target); }
+                if (isFalse(data.settings.showChooser)) { $('#language-selector').hide(); }
+                if (isFalse(data.settings.showTips)) { $('#tips-container').hide(); $('#main').addClass('col-md-12').removeClass('col-md-9'); }
+              }
+              
+              setTimeout(() => updateStatus(), options.updatePeriod);
+            },
+            error: function(xhr, status, error) {
+              let errorMessage = 'Failed to load dictionary';
+              if (status === 'timeout') {
+                errorMessage = 'Dictionary loading timed out';
+              } else if (status === 'parsererror') {
+                errorMessage = 'Invalid JSON format in dictionary';
+              } else if (xhr.status === 404) {
+                errorMessage = 'Dictionary file not found';
+              } else if (xhr.status === 0) {
+                errorMessage = 'Network error or CORS issue';
+              }
+              handleDictionaryError(errorMessage);
+              
+              // will have fallback so still register discovered languages in dropdowns
+              parseLanguageCodes(dictionary);
+              registerLanguages();
+            }
+          });
+        }
+        
+        function loadTips() {
+          const tipTemplate = (index, title, body, shown) => `
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tips-section-${index}" aria-expanded="true" aria-controls="tips-section-${index}">
+                  ${title}
+                </button>
+              </h2>
+              <div id="tips-section-${index}" class="accordion-collapse collapse ${shown ? 'show' : ''}" data-bs-parent="#tips-parent">
+                <div class="accordion-body">
+                  ${body}
+                </div>
+              </div>
+            </div>
+          `;
+          
+          if (Array.isArray(tips) && tips.length > 0) {
+            $('#tips-parent').empty();
+            var i = 1;
+              $.each(tips, function(i, item) {                
+                content = tipTemplate(i+1, item.title, item.body, i==0);
+                $('#tips-parent').append(content);
+                i++;
+            });
+          }
+        }
+
+        function handleDictionaryError(errorMessage) {
+          console.error('Dictionary loading error:', errorMessage);
+          $('#statusText').text(`Error: ${errorMessage}`);
+          
+          // Fall back to sample data for demonstration
+          dictionary = [
+            { en: 'snail', def_en: 'a shelled gastropod', fr: 'escargot', def_fr: 'gastéropode à coquille' },
+            { en: 'cat', def_en: 'a small domesticated carnivorous mammal', fr: 'chat', def_fr: 'petit mammifère carnivore domestique' },
+            { en: 'dog', def_en: 'a domesticated carnivorous mammal', fr: 'chien', def_fr: 'mammifère carnivore domestique' },
+            { en: 'run', def_en: 'move at a speed faster than walking', fr: 'courir', def_fr: 'se déplacer plus vite qu\'en marchant' },
+            { en: 'walk', def_en: 'move at a regular pace by lifting and setting down each foot', fr: 'marcher', def_fr: 'se déplacer à un rythme régulier' }
+          ];
+          dictionaryLoaded = true;
+          
+          $('#statusText').text('Using fallback dictionary data');
+          setTimeout(() => updateStatus(), options.updatePeriod);
+        }
+
+        function parseUrlParams() {
+          const urlParams = new URLSearchParams(window.location.search);
+          const target = urlParams.get('target');
+          const ref = urlParams.get('ref');
+          const src = urlParams.get('dict');
+          
+          if (target) $('#targetLang').val(target);
+          if (ref) $('#refLang').val(ref);
+          if (src) dictSource = src;
+        }
+
+        function attachEventListeners() {
+          $(textEditorObject).on('input', handleInput);
+          $(textEditorObject).on('keydown', handleKeyDown);
+          $(textEditorObject).on('blur', hideSuggestions);
+          $(textEditorObject).on('click', hideSuggestions);
+          $(textEditorObject).on('keydown', noLoseFocus);          
+          $('#targetLang, #refLang').on('change', hideSuggestions);
+          $('#copyBtn').on('click', copyToClipboard);
+          $('#clearBtn').on('click', clearText);
+        }
+        
+        var typewatch = (function() {
+          var timer = 0;
+          return function(callback, ms) {
+            clearTimeout(timer);
+            timer = setTimeout(callback, ms);
+          };
+        })();
+
+        function handleInput() {
+          var cursorPos, text;
+
+          updateStatus();
+
+          if (isRichText()) {
+            // for WYSIWYG div
+            cursorPos = window.getSelection().focusOffset;
+            text = window.getSelection().focusNode;
+          } else {
+            // for standard textarea
+            cursorPos = $(textEditorObject)[0].selectionStart;
+            text = $(textEditorObject).val();
+          }
+
+          // Find the current word being typed
+          const wordBoundary = findWordBoundary(text, cursorPos);
+
+          currentWord = wordBoundary.word;
+          currentWordStart = wordBoundary.start;
+          isColonSearch = currentWord.startsWith(':');
+
+          if (currentWord.length > 0) {
+            showSuggestions();
+          } else {
+            hideSuggestions();
+          }
+        }
+
+        function findWordBoundary(text, pos) {
+          let start = pos;
+          let end = pos;
+          let textVal = typeof(text) == 'object' ? text.textContent : text;
+
+          // Find start of word (including colon), also allowing _ as term extender
+          while (start > 0 && /[\p{L}:_]/u.test(textVal[start - 1])) {
+            start--;
+          }
+
+          // Find end of word
+          while (end < text.length && /\p{L}_/.test(textVal[end])) {
+            end++;
+          }
+
+          return { word: textVal.substring(start, end), start: start, end: end };
+        }
+
+        function showSuggestions() {
+          if (!dictionaryLoaded) {
+            return; // Don't show suggestions if dictionary isn't loaded yet
+          }
+          
+          // can perform a compound term search with _ (space otherwise resets)
+          const searchTerm = isColonSearch ? currentWord.substring(1).replace(/_/g, ' ') : currentWord.replace(/_/g, ' ');
+
+          if (searchTerm.length === 0) {
+            hideSuggestions();
+            return;
+          }
+          suggestions = findMatches(searchTerm);
+          if (suggestions.length === 0) {
+            hideSuggestions();
+            return;
+          }
+          
+          // show popup after short delay (to minimise interference with continuous typing)
+          typewatch(function() {
+            renderSuggestions();
+            positionPopup();
+            selectedIndex = 0;
+            updateSelection();
+          }, options.popupDelay);
+        }
+
+        function findMatches(searchTerm) {
+          const targetLang = $('#targetLang').val();
+          const refLang = $('#refLang').val();
+          const searchLower = searchTerm.toLowerCase();
+          const wordMatches = [];
+          const defMatches = [];
+          
+          $.each(dictionary, function(index, entry) {
+            if (isColonSearch) {
+              // Search in reference language from first char only
+              if (entry[refLang] && entry[refLang].toLowerCase().match(`^${searchLower}|[,;\\/\\s]+${searchLower}`)) {
+                wordMatches.push(entry);
+              // Definitions can match anywhere but are low priority
+              } else if (entry[`def_${refLang}`] && entry[`def_${refLang}`].toLowerCase().includes(searchLower)) {
+                
+                defMatches.push(entry);
+              }
+            } else {
+              // Search in target language
+              if (entry[targetLang] && entry[targetLang].toLowerCase().match(`^${searchLower}|[,;\\/\\s]+${searchLower}`)) {
+                wordMatches.push(entry);
+              } else if (entry[`def_${targetLang}`] && entry[`def_${targetLang}`].toLowerCase().includes(searchLower)) {
+                defMatches.push(entry);
+              }
+            }
+          });
+          
+          // prioritise shorter word matches
+          if (wordMatches && isColonSearch) {
+            wordMatches.sort((a, b) => a[`${refLang}`].length - b[`${refLang}`].length);
+          } else {
+            wordMatches.sort((a, b) => a[`${targetLang}`].length - b[`${targetLang}`].length);
+          }
+          
+          // Combine matches, prioritizing word matches
+          const allMatches = [...wordMatches, ...defMatches];
+          return allMatches.slice(0, 7);
+        }
+
+        function renderSuggestions() {
+          const targetLang = $('#targetLang').val();
+          const refLang = $('#refLang').val();          
+          let html = '';
+          let defMatchesStartIndex = -1;
+          
+          $.each(suggestions, function(index, entry) {
+            const targetWord = entry[targetLang] || '';
+            const refWord = entry[refLang] || '';
+            const refDef = entry[`def_${refLang}`] || '';
+            // Check if this is a definition match
+            const isDefMatch = isColonSearch ?
+              !entry[refLang]?.toLowerCase().includes(currentWord.substring(1).toLowerCase()) :
+              !entry[targetLang]?.toLowerCase().includes(currentWord.toLowerCase());
+            if (isDefMatch && defMatchesStartIndex === -1) {
+              defMatchesStartIndex = index;
+            }
+            const className = isDefMatch ? 'suggestion-item definition-match' : 'suggestion-item';
+            html += `
+                    <div class="${className}" data-index="${index}">
+                      <div>
+                        <span class="suggestion-target">${targetWord}</span>
+                        <span class="suggestion-ref">${refWord}</span>
+                      </div>
+                      <div class="suggestion-def" title="${refDef}">${refDef.length > 40 ? refDef.substring(0,40) + "..." : refDef}</div>
+                    </div>
+                  `;
+          });
+          $('#suggestionsPopup').html(html);
+          
+          // Add click handlers
+          $('#suggestionsPopup .suggestion-item').on('mousedown', function(e) {
+            e.preventDefault();
+            const index = parseInt($(this).data('index'));
+            selectSuggestion(index);
+          });
+        }
+
+        function positionPopup() {
+          var $editor = $(textEditorObject);
+          const editorOffset = $editor.offset();
+          const cursorPos = getCursorPosition();
+          
+          $('#suggestionsPopup').css({
+            left: cursorPos.left + 10 + 'px',
+            top: (cursorPos.top + 25) + 'px',
+            display: 'block'
+          });
+        }
+
+        function getCursorPosition() {
+          const $editor = $(textEditorObject);
+          const editor = $editor[0];
+          const editorOffset = $editor.offset();
+          
+          let caretPos = getSelection()
+            .getRangeAt(0)
+            .getBoundingClientRect();
+            
+          if (caretPos.x == 0 && caretPos.y == 0) {
+            const div = document.createElement('div');
+            
+            for (style of editor.computedStyleMap())
+              div.style[style[0]] = style[1].toString();
+            div.textContent = editor.value.substring(0, editor.selectionStart);
+            
+            const span = document.createElement('span');
+            div.insertBefore(span, null);
+            document.body.insertBefore(div, null);
+            
+            const [divPos, spanPos, inputPos] = [div, span, editor].map(e => e.getBoundingClientRect());
+            caretPos = {
+              x: inputPos.x + (spanPos.x - divPos.x),
+              y: inputPos.y + (spanPos.y - divPos.y)
+            };
+            div.remove();
+          }
+          
+          // Calculate position relative to editor
+          const lineHeight = parseInt($editor.css('lineHeight')) || 20;
+          const paddingTop = parseInt($editor.css('paddingTop')) || 0;
+          const paddingLeft = parseInt($editor.css('paddingLeft')) || 0;
+          
+          return {
+            left: caretPos.x - editorOffset.left,
+            top: caretPos.y - editorOffset.top + paddingTop + lineHeight
+          };
+        }
+
+        function isCharacterKeyPress(evt) {
+            if (typeof evt.which == "undefined") {
+                // This is IE, which only fires keypress events for printable keys
+                return true;
+            } else if (typeof evt.which == "number" && evt.which > 0) {
+                // In other browsers except old versions of WebKit, evt.which is
+                // only greater than zero if the keypress is a printable key.
+                // We need to filter out backspace and ctrl/alt/meta key combinations
+                return !evt.ctrlKey && !evt.metaKey && !evt.altKey && evt.which != 8;
+            }
+            return false;
+        }
+
+        function handleKeyDown(e) {
+          // reset copy button if pressed
+          if ($('#copyBtn').text(0 == '✅ Copied!')) {
+            $('#copyBtn').removeClass('success').addClass('btn-outline-primary');
+            $('#copyBtn').text('📋 Copy Text');
+          }
+          
+          if (isCharacterKeyPress(e)) { $('#autoSave').text("…"); }
+          if ($('#suggestionsPopup').is(':hidden')) return;
+          
+          switch (e.key) {
+            case 'ArrowDown':
+              e.preventDefault();
+              selectedIndex = Math.min(selectedIndex + 1, suggestions.length - 1);
+              updateSelection();
+              break;
+            case 'ArrowUp':
+              e.preventDefault();
+              selectedIndex = Math.max(selectedIndex - 1, -1);
+              updateSelection();
+              break;
+            case 'Tab':
+              e.preventDefault();
+              if (selectedIndex >= 0) {
+                selectSuggestion(selectedIndex);
+              } else if (suggestions.length > 0) {
+                selectSuggestion(-1);
+              }
+              break;
+            case 'Escape':
+              hideSuggestions();
+              break;
+          }
+        }
+
+        function updateSelection() {
+          $('#suggestionsPopup .suggestion-item').each(function(index) {
+            $(this).toggleClass('selected', index === selectedIndex);
+          });
+        }
+
+        function selectSuggestion(index) {
+          var text = '';
+
+          if (index < 0 || index >= suggestions.length) return;
+          const entry = suggestions[index];
+          const targetLang = $('#targetLang').val();
+          const targetWord = entry[targetLang] || '';
+          
+          // Replace the current word with the selected suggestion
+          const $editor = $(textEditorObject);
+          if (isRichText()) {
+            // for WYSIWYG div
+            contentNode = window.getSelection().focusNode;
+            if (contentNode.nodeType == Node.TEXT_NODE) {
+              text = contentNode.textContent;
+            } else {
+              text = contentNode.innerHTML;
+            }
+          } else {
+            // for standard textarea
+            text = $editor.val();
+          }
+          
+          const newText = text.substring(0, currentWordStart) +
+            targetWord +
+            text.substring(currentWordStart + currentWord.length);
+          const newPos = (text.substring(0, currentWordStart) + targetWord).length
+
+          if (isRichText()) {
+            // for WYSIWYG div
+            selection = window.getSelection().focusNode;
+            selection.textContent = newText;
+            // return cursor to correct location                
+            window.getSelection().setPosition(selection, newPos);
+          } else {
+            // for standard textarea
+            $editor.val(newText);
+          }
+          const newCursorPos = currentWordStart + targetWord.length;
+          $editor[0].selectionStart = $editor[0].selectionEnd = newCursorPos;
+          hideSuggestions();
+          updateStatus();
+          $editor.focus();
+        }
+
+        function hideSuggestions() {
+          $('#suggestionsPopup').hide();
+          selectedIndex = -1;
+        }
+
+        function noLoseFocus(e) {
+          if (e.which == 9) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
+        }
+
+        function updateStatus() {
+          const text = getTextEditorText();
+          const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+          const chars = text.length;
+          $('#wordCount').text(`Words: ${words}`);
+          $('#charCount').text(`Characters: ${chars}`);
+          if (isSet($('#targetLang').val()) && isSet($('#refLang').val())) {
+            $('#lang').text(`${$('#targetLang').val().toUpperCase()}∴${$('#refLang').val().toUpperCase()}`);
+          }
+          if (dictionaryLoaded) {
+            $('#statusText').text(`Dictionary: ${dictionary.length} entries`);
+          }
+          $(textEditorObject).focus();
+        }
+
+        function isRichText() {
+          return $(textEditorObject).prop('nodeName').toLowerCase() != 'textarea';
+        }
+
+        function copyToClipboard() {
+          const text = getTextEditorText();
+          const $copyBtn = $('#copyBtn');
+
+          if (!text.trim()) {
+            // Flash button if no text to copy
+            $copyBtn.addClass('btn-outline-warning').removeClass('btn-outline-primary');
+            $copyBtn.text('📝 No text to copy');
+            setTimeout(() => {
+              $copyBtn.removeClass('btn-outline-warning').addClass('btn-outline-primary');
+              $copyBtn.text('📋 Copy Text');
+            }, 1500);
+            return;
+          }
+
+          // Try modern clipboard API first
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+              showCopySuccess();
+            }).catch((err) => {
+              console.warn('Clipboard API failed:', err);
+              fallbackCopyToClipboard(text);
+            });
+          } else {
+            // Fallback for older browsers
+            fallbackCopyToClipboard(text);
+          }
+
+          // return cursor to rich text editor                
+          $(textEditorObject).find(".trumbowyg-editor").focus();
+        }
+
+        function getTextEditorText() {
+          if (isRichText()) {
+            // for WYSIWYG div
+            if (window.getSelection().focusNode) {
+              text = window.getSelection().focusNode.textContent;
+            } else {
+              text = "";
+            }
+          } else {
+            // for standard textarea
+            text = $(textEditorObject).val();
+          }
+          return text;
+        }
+
+        function setTextEditorText(text) {
+          if (isRichText()) {
+            // for WYSIWYG div
+            var editNode = $(textEditorObject).find(".trumbowyg-editor").html(text);
+            editNode.focus();
+            selection = window.getSelection().focusNode;
+            window.getSelection().setPosition(selection, selection.length);
+          } else {
+            // for standard textarea
+            $(textEditorObject).val(text);
+          }
+        }
+
+        function clearText() {
+          $(textEditorObject).val('');
+          $(textEditorObject).focus();
+        }
+
+        function fallbackCopyToClipboard(text) {
+          // Create a temporary textarea element
+          const $temp = $('<textarea>').css({
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            width: '2em',
+            height: '2em',
+            padding: '0',
+            border: 'none',
+            outline: 'none',
+            boxShadow: 'none',
+            background: 'transparent'
+          }).val(text).appendTo('body');
+          
+          try {
+            // Select and copy the text
+            $temp[0].select();
+            $temp[0].setSelectionRange(0, 99999); // For mobile devices
+            if (document.execCommand('copy')) {
+              showCopySuccess();
+            } else {
+              showCopyError();
+            }
+          } catch (err) {
+            console.error('Fallback copy failed:', err);
+            showCopyError();
+          } finally {
+            $temp.remove();
+          }
+        }
+
+        function showCopySuccess() {
+          const $copyBtn = $('#copyBtn');
+          $copyBtn.addClass('success').removeClass('btn-outline-primary');
+          $copyBtn.text('✅ Copied!');
+          $(textEditorObject).focus();
+        }
+
+        function showCopyError() {
+          const $copyBtn = $('#copyBtn');
+          $copyBtn.addClass('btn-outline-danger').removeClass('btn-outline-primary');
+          $copyBtn.text('❌ Copy failed');
+          setTimeout(() => {
+            $copyBtn.removeClass('btn-outline-danger').addClass('btn-outline-primary');
+            $copyBtn.text('📋 Copy Text');
+          }, 2000);
+        }
+
+        function autoLoad() {             
+          const urlParams = new URLSearchParams(window.location.search);
+          const clearCache = urlParams.get('clear');
+          
+          if (!clearCache) {
+            // get settings from localStorage
+            var text = window.localStorage.getItem('editorText');
+
+            if (text) {
+              setTextEditorText(text);
+              $('#autoSave').text('Loaded from autosave');
+            }
+          } else {
+            window.localStorage.clear();
+          }
+        }
+
+        function autoSave() {
+          text = getTextEditorText();
+          if (window.localStorage.getItem('editorText') != text) {
+            // set the item in localStorage
+            window.localStorage.setItem('editorLang', JSON.stringify({
+              target: $('#targetLang').val(),
+              ref: $('#refLang').val()
+            }));
+            window.localStorage.setItem('editorText', text);
+            $('#autoSave').text('Autosaved');
+          }
+        }
+
+        // Initialize the editor
+        init();
+      });
+
+      function parseLanguageCodes(dictionary) {
+        // ISO 639-1 language code to name mapping
+        const langCodes = {
+          'ab': 'Abkhazian',
+          'aa': 'Afar',
+          'af': 'Afrikaans',
+          'ak': 'Akan',
+          'sq': 'Albanian',
+          'am': 'Amharic',
+          'ar': 'Arabic',
+          'an': 'Aragonese',
+          'hy': 'Armenian',
+          'as': 'Assamese',
+          'av': 'Avaric',
+          'ae': 'Avestan',
+          'ay': 'Aymara',
+          'az': 'Azerbaijani',
+          'bm': 'Bambara',
+          'ba': 'Bashkir',
+          'eu': 'Basque',
+          'be': 'Belarusian',
+          'bn': 'Bengali',
+          'bh': 'Bihari languages',
+          'bi': 'Bislama',
+          'bs': 'Bosnian',
+          'br': 'Breton',
+          'bg': 'Bulgarian',
+          'my': 'Burmese',
+          'ca': 'Catalan, Valencian',
+          'km': 'Central Khmer',
+          'ch': 'Chamorro',
+          'ce': 'Chechen',
+          'ny': 'Chichewa, Chewa, Nyanja',
+          'zh': 'Chinese',
+          'cu': 'Church Slavonic, Old Bulgarian, Old Church Slavonic',
+          'cv': 'Chuvash',
+          'kw': 'Cornish',
+          'co': 'Corsican',
+          'cr': 'Cree',
+          'hr': 'Croatian',
+          'cs': 'Czech',
+          'da': 'Danish',
+          'dv': 'Divehi, Dhivehi, Maldivian',
+          'nl': 'Dutch, Flemish',
+          'dz': 'Dzongkha',
+          'en': 'English',
+          'eo': 'Esperanto',
+          'et': 'Estonian',
+          'ee': 'Ewe',
+          'fo': 'Faroese',
+          'fj': 'Fijian',
+          'fi': 'Finnish',
+          'fr': 'French',
+          'ff': 'Fulah',
+          'gd': 'Gaelic, Scottish Gaelic',
+          'gl': 'Galician',
+          'lg': 'Ganda',
+          'ka': 'Georgian',
+          'de': 'German',
+          'ki': 'Gikuyu, Kikuyu',
+          'el': 'Greek (Modern)',
+          'kl': 'Greenlandic, Kalaallisut',
+          'gn': 'Guarani',
+          'gu': 'Gujarati',
+          'ht': 'Haitian, Haitian Creole',
+          'ha': 'Hausa',
+          'he': 'Hebrew',
+          'hz': 'Herero',
+          'hi': 'Hindi',
+          'ho': 'Hiri Motu',
+          'hu': 'Hungarian',
+          'is': 'Icelandic',
+          'io': 'Ido',
+          'ig': 'Igbo',
+          'id': 'Indonesian',
+          'ia': 'Interlingua (International Auxiliary Language Association)',
+          'ie': 'Interlingue',
+          'iju': 'Ijunta',
+          'iu': 'Inuktitut',
+          'ik': 'Inupiaq',
+          'ga': 'Irish',
+          'it': 'Italian',
+          'ja': 'Japanese',
+          'jv': 'Javanese',
+          'kn': 'Kannada',
+          'kr': 'Kanuri',
+          'ks': 'Kashmiri',
+          'kk': 'Kazakh',
+          'rw': 'Kinyarwanda',
+          'kv': 'Komi',
+          'kg': 'Kongo',
+          'ko': 'Korean',
+          'kj': 'Kwanyama, Kuanyama',
+          'ku': 'Kurdish',
+          'ky': 'Kyrgyz',
+          'lo': 'Lao',
+          'la': 'Latin',
+          'lv': 'Latvian',
+          'lb': 'Letzeburgesch, Luxembourgish',
+          'li': 'Limburgish, Limburgan, Limburger',
+          'ln': 'Lingala',
+          'lt': 'Lithuanian',
+          'lu': 'Luba-Katanga',
+          'mk': 'Macedonian',
+          'mg': 'Malagasy',
+          'ms': 'Malay',
+          'ml': 'Malayalam',
+          'mt': 'Maltese',
+          'gv': 'Manx',
+          'mi': 'Maori',
+          'mr': 'Marathi',
+          'mh': 'Marshallese',
+          'ro': 'Moldovan, Moldavian, Romanian',
+          'mn': 'Mongolian',
+          'na': 'Nauru',
+          'nv': 'Navajo, Navaho',
+          'nd': 'Northern Ndebele',
+          'ng': 'Ndonga',
+          'ne': 'Nepali',
+          'se': 'Northern Sami',
+          'no': 'Norwegian',
+          'nb': 'Norwegian Bokmål',
+          'nn': 'Norwegian Nynorsk',
+          'ii': 'Nuosu, Sichuan Yi',
+          'oc': 'Occitan (post 1500)',
+          'oj': 'Ojibwa',
+          'or': 'Oriya',
+          'om': 'Oromo',
+          'os': 'Ossetian, Ossetic',
+          'pi': 'Pali',
+          'pa': 'Panjabi, Punjabi',
+          'ps': 'Pashto, Pushto',
+          'fa': 'Persian',
+          'pl': 'Polish',
+          'pt': 'Portuguese',
+          'qu': 'Quechua',
+          'rm': 'Romansh',
+          'rn': 'Rundi',
+          'ru': 'Russian',
+          'sm': 'Samoan',
+          'sg': 'Sango',
+          'sa': 'Sanskrit',
+          'sc': 'Sardinian',
+          'sr': 'Serbian',
+          'sn': 'Shona',
+          'sd': 'Sindhi',
+          'si': 'Sinhala, Sinhalese',
+          'sk': 'Slovak',
+          'sl': 'Slovenian',
+          'so': 'Somali',
+          'st': 'Sotho, Southern',
+          'nr': 'South Ndebele',
+          'es': 'Spanish, Castilian',
+          'su': 'Sundanese',
+          'sw': 'Swahili',
+          'ss': 'Swati',
+          'sv': 'Swedish',
+          'tl': 'Tagalog',
+          'ty': 'Tahitian',
+          'tg': 'Tajik',
+          'ta': 'Tamil',
+          'tt': 'Tatar',
+          'te': 'Telugu',
+          'th': 'Thai',
+          'bo': 'Tibetan',
+          'ti': 'Tigrinya',
+          'to': 'Tonga (Tonga Islands)',
+          'ts': 'Tsonga',
+          'tn': 'Tswana',
+          'tr': 'Turkish',
+          'tk': 'Turkmen',
+          'tw': 'Twi',
+          'ug': 'Uighur, Uyghur',
+          'uk': 'Ukrainian',
+          'ur': 'Urdu',
+          'uz': 'Uzbek',
+          've': 'Venda',
+          'vi': 'Vietnamese',
+          'vo': 'Volap_k',
+          'wa': 'Walloon',
+          'cy': 'Welsh',
+          'fy': 'Western Frisian',
+          'wo': 'Wolof',
+          'xh': 'Xhosa',
+          'yi': 'Yiddish',
+          'yo': 'Yoruba',
+          'za': 'Zhuang, Chuang',
+          'zu': 'Zulu'
+        };
+        
+        // Get all unique language codes from the dictionary
+        const foundLanguages = {};
+        
+        dictionary.forEach(entry => {
+          Object.keys(entry).forEach(key => {
+            // Check if the key is potentially a 2 or 3 letter language code
+            if ((key.length === 2 || key.length === 3) && /^[\p{L}]{2,3}$/u.test(key)) {
+              if (langCodes[key]) {
+                foundLanguages[key] = langCodes[key];
+              } // add where registered and unique
+            }
+          });
+        });
+        
+        languages = foundLanguages;
+      }
+
+      function registerLanguages() {
+        var keys;
+        keys = $.map(languages, function(value, key) {
+          return key;
+        }).sort();
+        
+        $.each(keys, function(index, value) {
+          // add an entry to dropdown for target and ref lists
+          $('#targetLang').append(new Option(languages[value] + " (" + value.toUpperCase() + ")", value));
+          $('#refLang').append(new Option(languages[value] + " (" + value.toUpperCase() + ")", value));
+        });
+        
+        // set ref to second listed language by default
+        if (keys.length >= 1) $("#refLang").val(keys[1]);
+      }
+    </script>
+  </body>
+</html>

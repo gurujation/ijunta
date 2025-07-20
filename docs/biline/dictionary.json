@@ -1,0 +1,3953 @@
+{
+    "settings": {
+        "target": "iju",
+        "ref": "en",
+        "showChooser": false,
+        "showTips": true
+    },
+    "tips": [
+        {
+            "title": "About Ijunta",
+            "body": "<p>Ijunta is a microlanguage which aims to be an aesthetically pleasing language to write, read, and speak.</p><p>It has a compact vocabulary and a flexible but simple system of affixes to express nuanced, socially robust meanings.</p><p>It is intended to be easy to pronounce by the majority of global speakers, using only common consonants and a simple 5 vowel system.</p><p><a href=\"https://gurujation.github.io/ijunta/\" target=\"_new\">Learn more</a></p>"
+        },
+        {
+            "title": "Syntax",
+            "body": "<p>Sentences and clauses in Ijunta are arranged in subject-verb-object (SVO) order.</p><p>Since most words may be flexibly used in multiple parts of speech, meaning must be inferred through position and context.</p><p>The word immediately following the subject noun phrase is always assumed to be a verb unless a subject complement is used as a copula.</p><p>The two primary complements are:<ul><li><b>a</b> - marks the next word / phrase as a noun complement, and</li><li><b>e</b> - marks the next word / phrase as an adjective when following a noun, or as an adverb when following a verb.</li></ul></p><p>For example:</p><ul><li><i>Animale manja</i> - The animal eats.</li><li><i>Animale a manja</i> - The animal is food</li><li><i>A vasa</i> - There is water</li><li><i>E vasa</i> - It’s wet</li></ul><p>The use of <b>o</b> marks the next word as the owner in an associative relationship with the preceding noun or attributional adjectives. For example:</p><ul><li><i>Mi amo aroma o pan.</i> - I like the smell of the bread.</li><li><i>Si uveni de seki o dia</i> - He is coming tomorrow</li></ul><p>When creating a question with interrogative pronouns, simply use the same sentence structure as a statement, but use the appropriate pronoun for the information being sought. For example:</p><ul><li><i>Vendela e kaloke?</i> - Where are the shops?.</li><li><i>Kato veni e kalite?</i> - Who is coming tonight?</li></ul>"
+        },
+        {
+            "title": "Modifiers",
+            "body": "<p><strong>Nouns</strong><br> The following suffixes are used to systematically modify nouns:</p> <ul> <li><em>-du, -edu</em>: Make an abstract noun from adjective or verb; similar to English <em>-ness</em>, <em>-ment</em></li> <li><em>-la, -ela</em>: Indicates a type of place or situation relating to the base noun</li> <li><em>-le, -ale</em>: Creates a group noun from a singular noun object</li> <li><em>-ni, -i</em>: Indicates an object of a type or kind, often diminutive, template for color names</li> <li><em>-ro, -ero</em>: Marker of a person with a role or profession</li> </ul> <p>The second form of suffix is used for words that end in <strong>m</strong> or <strong>n</strong>, or words that already end with that suffix (so not <strong>karoro</strong>, but <strong>karero</strong> for <em>driver</em>).</p> <p><strong>Verbs</strong><br> Any verb can be intensified in its urgency, strength and/or power through addition of the suffix <strong>-ma</strong>. Use the suffix <strong>-mia/-nia</strong> instead if the word ends in <strong>m</strong>, <strong>ma</strong>, <strong>n</strong>, or <strong>na</strong>.</p> <p>If an action as taking place in the past or future, prefix with <strong>du</strong> (past tense)  or <strong>go</strong> (future tense).</p> <p>The prefix <strong>me</strong> is used  in situations where an action has not yet occurred, but is hypothesized as likely or possible. To actively push for the occurrence of the action or event, pair <strong>me</strong> with the <strong>-ma</strong> suffix to act as a command or demand; or <strong>-mia</strong> if already ending in -<strong>ma</strong>.</p> <p>The prefix <strong>i-</strong> (or <strong>in-</strong> before vowels) is used in three situations:</p> <ul> <li>To mark a verb as progressive tense – can also be paired with <strong>du</strong> or <strong>go</strong>)</li> <li>To use as a gerund (noun form)</li> <li>When paired with a verb of intent or causation such as <strong>deside</strong> (expect) or <strong>vole</strong> (want)</li> </ul> <p>The prefix <strong>u-</strong> (or <strong>us-</strong> before vowels) is used to:</p> <ul> <li>Indicate that an action is possible to complete, or that a state may occur in the future</li> <li>Politely invite someone to undertake an action</li> </ul> <p>When a <strong>u-</strong> prefix is combined with <strong>-ma</strong>, it acts as a polite request or exhortation; use <strong>-mia</strong> instead if the word already ends in -<strong>ma</strong>.</p>"
+        },
+        {
+            "title": "Connections & comparisons",
+            "body": "<p><p>Ijunta has a small range of flexible prepositions, with the most important being:</p> <ul> <li><em>en</em>: Being at a place or existing in a state (in, on, at [place], inside, on)</li> <li><em>de</em>: Origin, agent, or consideration of verb (from, of, about, by)</li> <li><em>ada</em>: A directed effort or targeting (to, at [time], into)</li> <li><em>kon</em>: A possession or co-location (with, among, during)</li> </ul> <p>To reference relative distance of places, Ijunta uses a three-way distance contrast system with <strong>di</strong> (<em>here</em>), <strong>da</strong> (<em>there</em>) and <strong>vida</strong> (<em>over there</em>).</p><p>Ijunta conjunctions function mostly the same as in English, with the most important being:</p> <ul> <li><em>an</em>: and, also, furthermore</li> <li><em>u</em>: or, else, otherwise</li> <li><em>pero</em>: but, except, besides</li> <li><em>ankora</em>: yet, even still<br> &lt;![endif]–&gt;</li> </ul> <p>Ijunta also has several idiomatic adverbial connecting phrases:</p> <ul> <li><em>e junta</em>: (consequential) so, as a result</li> <li><em>e pende</em>: (period of time) at the time that, when</li> <li><em>e punto</em>: (point in time) sometimes, from time to time, occasionally</li> </ul> <p>These phrases can be combined with <strong>di</strong> or <strong>da</strong> to reflect a short-term or long-term focus, for example:</p> <ul> <li><em>e da junta</em>: eventually this means</li> <li><em>e da pende</em>: over the long term</li> <li><em>e di punto</em>: at this moment, right now</li> </ul>"          
+        }
+    ],
+    "dictionary": [
+        {
+            "iju": "a",
+            "en": "{there} is/are",
+            "def_en": "(direct object & nominal complement)"
+        },
+        {
+            "iju": "ada",
+            "en": "to, at, into",
+            "def_en": "(directed towards a place / state)"
+        },
+        {
+            "iju": "an",
+            "en": "and, also",
+            "def_en": ""
+        },
+        {
+            "iju": "da",
+            "en": "that, there",
+            "def_en": ""
+        },
+        {
+            "iju": "daki",
+            "en": "that who/which/where",
+            "def_en": "(complementizer)"
+        },
+        {
+            "iju": "dale",
+            "en": "those",
+            "def_en": ""
+        },
+        {
+            "iju": "de",
+            "en": "from, of, about, by",
+            "def_en": ""
+        },
+        {
+            "iju": "deke",
+            "en": "of that, about which",
+            "def_en": ""
+        },
+        {
+            "iju": "den",
+            "en": "du + en = was in",
+            "def_en": ""
+        },
+        {
+            "iju": "di",
+            "en": "this, here",
+            "def_en": ""
+        },
+        {
+            "iju": "diale",
+            "en": "these",
+            "def_en": ""
+        },
+        {
+            "iju": "du",
+            "en": "(past tense marker)",
+            "def_en": ""
+        },
+        {
+            "iju": "-du, -edu",
+            "en": "-ness, -ment",
+            "def_en": "(make abstract noun from adjective or verb)"
+        },
+        {
+            "iju": "e",
+            "en": "{there} is/are, -ly",
+            "def_en": "(adjectival / adverbial complement)"
+        },
+        {
+            "iju": "en",
+            "en": "in, inside, on, near",
+            "def_en": "(at a place / state)"
+        },
+        {
+            "iju": "gen",
+            "en": "will be in",
+            "def_en": "contraction of go + en"
+        },
+        {
+            "iju": "go",
+            "en": "(future tense marker)",
+            "def_en": ""
+        },
+        {
+            "iju": "go",
+            "en": "go, towards",
+            "def_en": ""
+        },
+        {
+            "iju": "i-, in-",
+            "en": "(marker for verbs in infinitive / progressive / gerund form)",
+            "def_en": ""
+        },
+        {
+            "iju": "ida",
+            "en": "was",
+            "def_en": "(object / nominal complement)"
+        },
+        {
+            "iju": "ide",
+            "en": "was",
+            "def_en": "(adjective / adverbial complement)"
+        },
+        {
+            "iju": "idem",
+            "en": "identical, same (thing), alike",
+            "def_en": ""
+        },
+        {
+            "iju": "ige",
+            "en": "will be",
+            "def_en": "(adjective / adverbial complement)"
+        },
+        {
+            "iju": "igo",
+            "en": "will be",
+            "def_en": "(object / nominal complement)"
+        },
+        {
+            "iju": "ja",
+            "en": "yes, definitely, certainly",
+            "def_en": ""
+        },
+        {
+            "iju": "ka",
+            "en": "what ",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kafase",
+            "en": "how",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kato",
+            "en": "who",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kakosa",
+            "en": "why",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kaloke",
+            "en": "where",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kano",
+            "en": "which",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kanun",
+            "en": "when",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "ke",
+            "en": "that",
+            "def_en": " (complementizer)"
+        },
+        {
+            "iju": "ki",
+            "en": "which, who",
+            "def_en": " (complementizer)"
+        },
+        {
+            "iju": "kide",
+            "en": "which is, which of, whose",
+            "def_en": "(interrogative)"
+        },
+        {
+            "iju": "kon",
+            "en": "with",
+            "def_en": ""
+        },
+        {
+            "iju": "-la, -ela",
+            "en": "(indicates a type of place or situation)",
+            "def_en": "(for example: vendela = shop)"
+        },
+        {
+            "iju": "-le, -ale",
+            "en": "(pluraliser, creates a group noun)",
+            "def_en": "(optional, primarily for emphasis or disambiguation)"
+        },
+        {
+            "iju": "-ma, -mia",
+            "en": "(intensify a word)",
+            "def_en": "(for example: vola = fly, volama = zoom)"
+        },
+        {
+            "iju": "me",
+            "en": "(potential/hypothetical marker)",
+            "def_en": "(use with -ma suffix for jussive/imperative)"
+        },
+        {
+            "iju": "mi",
+            "en": "I, me, (first person)",
+            "def_en": ""
+        },
+        {
+            "iju": "miale",
+            "en": "we, us",
+            "def_en": ""
+        },
+        {
+            "iju": "mialo",
+            "en": "our",
+            "def_en": ""
+        },
+        {
+            "iju": "mio",
+            "en": "my",
+            "def_en": ""
+        },
+        {
+            "iju": "-ni, -i",
+            "en": "(objects of a type or kind)",
+            "def_en": "(often diminutive, template for color naming)"
+        },
+        {
+            "iju": "no",
+            "en": "no, not",
+            "def_en": ""
+        },
+        {
+            "iju": "o",
+            "en": "(associative relationship)",
+            "def_en": ""
+        },
+        {
+            "iju": "pero",
+            "en": "but, except",
+            "def_en": ""
+        },
+        {
+            "iju": "po",
+            "en": "for, as",
+            "def_en": ""
+        },
+        {
+            "iju": "-re, -ure",
+            "en": "(mark a verb as passive voice)",
+            "def_en": ""
+        },
+        {
+            "iju": "-ro, -ero",
+            "en": "(marker of a person with a role or profession)",
+            "def_en": "(for example: sanoro = doctor)"
+        },
+        {
+            "iju": "sama",
+            "en": "as, than, like",
+            "def_en": ""
+        },
+        {
+            "iju": "se",
+            "en": "if, whether",
+            "def_en": ""
+        },
+        {
+            "iju": "se … posi",
+            "en": "if … then",
+            "def_en": ""
+        },
+        {
+            "iju": "si",
+            "en": "he, she, it (third person)",
+            "def_en": ""
+        },
+        {
+            "iju": "siale",
+            "en": "they",
+            "def_en": ""
+        },
+        {
+            "iju": "sialo",
+            "en": "their",
+            "def_en": ""
+        },
+        {
+            "iju": "sikosa",
+            "en": "it",
+            "def_en": ""
+        },
+        {
+            "iju": "sikoso",
+            "en": "its",
+            "def_en": ""
+        },
+        {
+            "iju": "sio",
+            "en": "his, hers",
+            "def_en": ""
+        },
+        {
+            "iju": "tu",
+            "en": "you, (second person)",
+            "def_en": ""
+        },
+        {
+            "iju": "tuale",
+            "en": "you (plural)",
+            "def_en": ""
+        },
+        {
+            "iju": "tualo",
+            "en": "your (plural)",
+            "def_en": ""
+        },
+        {
+            "iju": "tuo",
+            "en": "your",
+            "def_en": ""
+        },
+        {
+            "iju": "u",
+            "en": "or, either",
+            "def_en": ""
+        },
+        {
+            "iju": "u-, us-",
+            "en": "(marker for verbs as permissive)",
+            "def_en": "(ie can/able to; use with -ma for hortative)"
+        },
+        {
+            "iju": "usi",
+            "en": "can",
+            "def_en": "(contextual, only with noun or implied main verb)"
+        },
+        {
+            "iju": "uside",
+            "en": "could be, might be",
+            "def_en": "(contextual, only with noun or nominal complement)"
+        },
+        {
+            "iju": "usidema",
+            "en": "had to be, should be",
+            "def_en": "(contextual, only with noun or nominal complement)"
+        },
+        {
+            "iju": "usima",
+            "en": "ought",
+            "def_en": "(contextual, only with implied main verb)"
+        },
+        {
+            "iju": "me usima",
+            "en": "must",
+            "def_en": "(contextual, only with implied main verb)"
+        },
+        {
+            "iju": "vida",
+            "en": "over there",
+            "def_en": ""
+        },
+        {
+            "iju": "ado",
+            "en": "bring, apply, impact",
+            "def_en": ""
+        },
+        {
+            "iju": "ale",
+            "en": "all, everything",
+            "def_en": ""
+        },
+        {
+            "iju": "aliki",
+            "en": "some, few, an indefinite amount, somewhat",
+            "def_en": ""
+        },
+        {
+            "iju": "alikito",
+            "en": "someone",
+            "def_en": ""
+        },
+        {
+            "iju": "alito",
+            "en": "everyone",
+            "def_en": ""
+        },
+        {
+            "iju": "animale",
+            "en": "animal",
+            "def_en": ""
+        },
+        {
+            "iju": "aroma",
+            "en": "smell, taste",
+            "def_en": ""
+        },
+        {
+            "iju": "ave",
+            "en": "have, possession",
+            "def_en": ""
+        },
+        {
+            "iju": "bata",
+            "en": "beat, fight, battle",
+            "def_en": ""
+        },
+        {
+            "iju": "baton",
+            "en": "stick, rod",
+            "def_en": ""
+        },
+        {
+            "iju": "bodi",
+            "en": "body",
+            "def_en": ""
+        },
+        {
+            "iju": "boka",
+            "en": "mouth",
+            "def_en": ""
+        },
+        {
+            "iju": "bon",
+            "en": "good, aha!",
+            "def_en": ""
+        },
+        {
+            "iju": "dafem",
+            "en": "she",
+            "def_en": "(use only where gender relevant)"
+        },
+        {
+            "iju": "daviro",
+            "en": "he",
+            "def_en": "(use only where gender relevant)"
+        },
+        {
+            "iju": "debe",
+            "en": "debt, owe, burden, obligation",
+            "def_en": ""
+        },
+        {
+            "iju": "demo",
+            "en": "demonstration, indicate, show",
+            "def_en": ""
+        },
+        {
+            "iju": "dikosa",
+            "en": "reason, cause, explanation, case",
+            "def_en": ""
+        },
+        {
+            "iju": "dona",
+            "en": "give, gift, offer",
+            "def_en": ""
+        },
+        {
+            "iju": "duro",
+            "en": "hard, difficult, problem",
+            "def_en": ""
+        },
+        {
+            "iju": "eleki",
+            "en": "electric, electricity",
+            "def_en": ""
+        },
+        {
+            "iju": "fami",
+            "en": "family, relative",
+            "def_en": ""
+        },
+        {
+            "iju": "fase",
+            "en": "make, do, create",
+            "def_en": ""
+        },
+        {
+            "iju": "fem",
+            "en": "woman, female, lady",
+            "def_en": ""
+        },
+        {
+            "iju": "fini",
+            "en": "finish, final, end, complete",
+            "def_en": ""
+        },
+        {
+            "iju": "fugo",
+            "en": "fire, hot, burn",
+            "def_en": ""
+        },
+        {
+            "iju": "imaje",
+            "en": "image, picture",
+            "def_en": ""
+        },
+        {
+            "iju": "inita",
+            "en": "start, initial, beginning",
+            "def_en": ""
+        },
+        {
+            "iju": "ito",
+            "en": "person, human",
+            "def_en": ""
+        },
+        {
+            "iju": "itole",
+            "en": "people, humans",
+            "def_en": ""
+        },
+        {
+            "iju": "jalan",
+            "en": "path, way, road, street",
+            "def_en": ""
+        },
+        {
+            "iju": "jelu",
+            "en": "cool, cold",
+            "def_en": ""
+        },
+        {
+            "iju": "junta",
+            "en": "join, group, together",
+            "def_en": ""
+        },
+        {
+            "iju": "jura",
+            "en": "law, judge (v), rule, instruction",
+            "def_en": ""
+        },
+        {
+            "iju": "kaja",
+            "en": "box",
+            "def_en": ""
+        },
+        {
+            "iju": "kaka",
+            "en": "feces, s***",
+            "def_en": ""
+        },
+        {
+            "iju": "kali",
+            "en": "dark, black",
+            "def_en": ""
+        },
+        {
+            "iju": "kan",
+            "en": "able, ability",
+            "def_en": ""
+        },
+        {
+            "iju": "kapo",
+            "en": "head",
+            "def_en": ""
+        },
+        {
+            "iju": "kipa",
+            "en": "keep, stay, remain, continue, remainder",
+            "def_en": ""
+        },
+        {
+            "iju": "kisa",
+            "en": "rest, quiet, reflect",
+            "def_en": ""
+        },
+        {
+            "iju": "kore",
+            "en": "heart, fundamental, core",
+            "def_en": ""
+        },
+        {
+            "iju": "kosa",
+            "en": "thing, something, stuff, item",
+            "def_en": ""
+        },
+        {
+            "iju": "lado",
+            "en": "side, adjacent, next to",
+            "def_en": ""
+        },
+        {
+            "iju": "laje",
+            "en": "big, great, large",
+            "def_en": ""
+        },
+        {
+            "iju": "leva",
+            "en": "level, elevate, rise",
+            "def_en": ""
+        },
+        {
+            "iju": "lini",
+            "en": "straight, unbent, honest, line",
+            "def_en": ""
+        },
+        {
+            "iju": "loke",
+            "en": "location, locate, find, place",
+            "def_en": ""
+        },
+        {
+            "iju": "loku",
+            "en": "talk, speech, discussion",
+            "def_en": ""
+        },
+        {
+            "iju": "ludi",
+            "en": "game, play",
+            "def_en": ""
+        },
+        {
+            "iju": "luna",
+            "en": "moon",
+            "def_en": ""
+        },
+        {
+            "iju": "luse",
+            "en": "light",
+            "def_en": ""
+        },
+        {
+            "iju": "ma",
+            "en": "more",
+            "def_en": ""
+        },
+        {
+            "iju": "mala",
+            "en": "bad, unpleasant, malicious",
+            "def_en": ""
+        },
+        {
+            "iju": "mama",
+            "en": "mother",
+            "def_en": ""
+        },
+        {
+            "iju": "manja",
+            "en": "food, eat, chew, meal",
+            "def_en": ""
+        },
+        {
+            "iju": "mano",
+            "en": "hand, manual work",
+            "def_en": ""
+        },
+        {
+            "iju": "melin",
+            "en": "color, colorful",
+            "def_en": ""
+        },
+        {
+            "iju": "mesa",
+            "en": "table",
+            "def_en": ""
+        },
+        {
+            "iju": "mini",
+            "en": "small, little",
+            "def_en": ""
+        },
+        {
+            "iju": "mira",
+            "en": "see, look, watch, sight",
+            "def_en": ""
+        },
+        {
+            "iju": "mui",
+            "en": "very, many, much, a lot",
+            "def_en": ""
+        },
+        {
+            "iju": "nomi",
+            "en": "name, word",
+            "def_en": ""
+        },
+        {
+            "iju": "non",
+            "en": "none (of)",
+            "def_en": ""
+        },
+        {
+            "iju": "nota",
+            "en": "write, a writing",
+            "def_en": ""
+        },
+        {
+            "iju": "novi",
+            "en": "interesting, weird, strange",
+            "def_en": "(use with -ma for miracle, rare)"
+        },
+        {
+            "iju": "novito",
+            "en": "stranger, guest",
+            "def_en": ""
+        },
+        {
+            "iju": "nu",
+            "en": "new",
+            "def_en": ""
+        },
+        {
+            "iju": "nula",
+            "en": "nothing, zero",
+            "def_en": ""
+        },
+        {
+            "iju": "opesa",
+            "en": "money, wealth, riches",
+            "def_en": ""
+        },
+        {
+            "iju": "ota",
+            "en": "other, different",
+            "def_en": ""
+        },
+        {
+            "iju": "pan",
+            "en": "bread",
+            "def_en": ""
+        },
+        {
+            "iju": "papa",
+            "en": "father",
+            "def_en": ""
+        },
+        {
+            "iju": "pasa",
+            "en": "pass, happen, past",
+            "def_en": ""
+        },
+        {
+            "iju": "pensa",
+            "en": "think, thought, belief",
+            "def_en": ""
+        },
+        {
+            "iju": "peso",
+            "en": "piece, part, component",
+            "def_en": ""
+        },
+        {
+            "iju": "poten",
+            "en": "power, force, strong, loud",
+            "def_en": ""
+        },
+        {
+            "iju": "rapi",
+            "en": "fast, speed, quickly",
+            "def_en": ""
+        },
+        {
+            "iju": "roka",
+            "en": "rock",
+            "def_en": ""
+        },
+        {
+            "iju": "rondo",
+            "en": "circle, round, around",
+            "def_en": ""
+        },
+        {
+            "iju": "rondole",
+            "en": "area, space, zone",
+            "def_en": ""
+        },
+        {
+            "iju": "ropa",
+            "en": "clothing, wear",
+            "def_en": ""
+        },
+        {
+            "iju": "saka",
+            "en": "sugar, sweet",
+            "def_en": ""
+        },
+        {
+            "iju": "santi",
+            "en": "holy, spiritual",
+            "def_en": ""
+        },
+        {
+            "iju": "savi",
+            "en": "know, understand, knowledge",
+            "def_en": ""
+        },
+        {
+            "iju": "selo",
+            "en": "sky",
+            "def_en": ""
+        },
+        {
+            "iju": "senta",
+            "en": "center",
+            "def_en": ""
+        },
+        {
+            "iju": "sole",
+            "en": "sun",
+            "def_en": ""
+        },
+        {
+            "iju": "sono",
+            "en": "sound, noise, crash, bang",
+            "def_en": ""
+        },
+        {
+            "iju": "sopora",
+            "en": "sleep, unconscious",
+            "def_en": ""
+        },
+        {
+            "iju": "su",
+            "en": "too, too much, as well, also",
+            "def_en": ""
+        },
+        {
+            "iju": "subo",
+            "en": "under, below, down",
+            "def_en": ""
+        },
+        {
+            "iju": "supa",
+            "en": "above, over, up",
+            "def_en": ""
+        },
+        {
+            "iju": "tempale",
+            "en": "always, all the time",
+            "def_en": ""
+        },
+        {
+            "iju": "tempo",
+            "en": "time, interval, regulate",
+            "def_en": ""
+        },
+        {
+            "iju": "tera",
+            "en": "earth, land",
+            "def_en": ""
+        },
+        {
+            "iju": "toma",
+            "en": "take",
+            "def_en": ""
+        },
+        {
+            "iju": "tusio",
+            "en": "cough, bark",
+            "def_en": ""
+        },
+        {
+            "iju": "utila",
+            "en": "use, tool",
+            "def_en": ""
+        },
+        {
+            "iju": "vasa",
+            "en": "water",
+            "def_en": ""
+        },
+        {
+            "iju": "veji",
+            "en": "plant, vegetable",
+            "def_en": ""
+        },
+        {
+            "iju": "veni",
+            "en": "come, become, arrive",
+            "def_en": ""
+        },
+        {
+            "iju": "vere",
+            "en": "true, truth, really, fact",
+            "def_en": ""
+        },
+        {
+            "iju": "via",
+            "en": "through, across, trans-",
+            "def_en": ""
+        },
+        {
+            "iju": "viro",
+            "en": "man, male",
+            "def_en": ""
+        },
+        {
+            "iju": "viva",
+            "en": "life, live",
+            "def_en": ""
+        },
+        {
+            "iju": "vole",
+            "en": "want, need, desire",
+            "def_en": ""
+        },
+        {
+            "iju": "e junta",
+            "en": "and so, and as a result",
+            "def_en": ""
+        },
+        {
+            "iju": "e pende",
+            "en": "at the time that, when",
+            "def_en": ""
+        },
+        {
+            "iju": "e punto",
+            "en": "sometimes, occasionally, right now",
+            "def_en": ""
+        },
+        {
+            "iju": "aba",
+            "en": "tree, wood, grow (v)",
+            "def_en": ""
+        },
+        {
+            "iju": "abuso",
+            "en": "abuse, violate, assault, abusive",
+            "def_en": ""
+        },
+        {
+            "iju": "adaro",
+            "en": "prepare, organize, make ready",
+            "def_en": ""
+        },
+        {
+            "iju": "ade",
+            "en": "aid, care, concern, help, care for",
+            "def_en": ""
+        },
+        {
+            "iju": "adere",
+            "en": "adhere, stick, cling, sticky, glue",
+            "def_en": ""
+        },
+        {
+            "iju": "adio",
+            "en": "bye, farewell, valediction",
+            "def_en": ""
+        },
+        {
+            "iju": "adono",
+            "en": "get, receive",
+            "def_en": ""
+        },
+        {
+            "iju": "adora",
+            "en": "praise, venerate",
+            "def_en": ""
+        },
+        {
+            "iju": "agi",
+            "en": "field, farm",
+            "def_en": ""
+        },
+        {
+            "iju": "agifase",
+            "en": "cultivate, agriculture",
+            "def_en": ""
+        },
+        {
+            "iju": "agila",
+            "en": "eagle, hawk, a bird of prey",
+            "def_en": ""
+        },
+        {
+            "iju": "agon",
+            "en": "contest, race, compete",
+            "def_en": ""
+        },
+        {
+            "iju": "aje",
+            "en": "age (n + v), eon, aged",
+            "def_en": ""
+        },
+        {
+            "iju": "ajen",
+            "en": "gray",
+            "def_en": ""
+        },
+        {
+            "iju": "ajenda",
+            "en": "program, agenda, plan, computer program",
+            "def_en": ""
+        },
+        {
+            "iju": "akeri",
+            "en": "sharp, acute, keen",
+            "def_en": ""
+        },
+        {
+            "iju": "akuro",
+            "en": "accurate, precise, precision, exact, meticulous",
+            "def_en": ""
+        },
+        {
+            "iju": "akuso",
+            "en": "accuse, accusation, charge (legal)",
+            "def_en": ""
+        },
+        {
+            "iju": "alio",
+            "en": "garlic, onion",
+            "def_en": ""
+        },
+        {
+            "iju": "ameno",
+            "en": "amuse, entertain, fun, entertainment, grand",
+            "def_en": ""
+        },
+        {
+            "iju": "amiko",
+            "en": "friend, acquaintance, befriend, friendly",
+            "def_en": ""
+        },
+        {
+            "iju": "amo",
+            "en": "like, love, dear, favorite",
+            "def_en": ""
+        },
+        {
+            "iju": "ampula",
+            "en": "bottle, jar, flask",
+            "def_en": ""
+        },
+        {
+            "iju": "amum",
+            "en": "shield, armor",
+            "def_en": ""
+        },
+        {
+            "iju": "anima",
+            "en": "soul, spirit, ghost",
+            "def_en": ""
+        },
+        {
+            "iju": "anguli",
+            "en": "corner, angle",
+            "def_en": ""
+        },
+        {
+            "iju": "anjo",
+            "en": "angel, angelic",
+            "def_en": ""
+        },
+        {
+            "iju": "ankora",
+            "en": "yet, even, still",
+            "def_en": ""
+        },
+        {
+            "iju": "ano",
+            "en": "year, annual",
+            "def_en": ""
+        },
+        {
+            "iju": "ansi",
+            "en": "nerves, anxious, anxiety, nervous",
+            "def_en": ""
+        },
+        {
+            "iju": "ante",
+            "en": "before, in front of",
+            "def_en": ""
+        },
+        {
+            "iju": "antemedi",
+            "en": "morning",
+            "def_en": ""
+        },
+        {
+            "iju": "anti",
+            "en": "against, anti-, opposite, opposing, oppose",
+            "def_en": ""
+        },
+        {
+            "iju": "antika",
+            "en": "old, age (v), antique, ancient",
+            "def_en": ""
+        },
+        {
+            "iju": "anula",
+            "en": "ring, loop, hoop, circuit, halo",
+            "def_en": ""
+        },
+        {
+            "iju": "apara",
+            "en": "seem, appear, apparent, appearance",
+            "def_en": ""
+        },
+        {
+            "iju": "ara",
+            "en": "bee, hornet, wasp",
+            "def_en": ""
+        },
+        {
+            "iju": "araki",
+            "en": "spider, arachnid",
+            "def_en": ""
+        },
+        {
+            "iju": "asela",
+            "en": "wing, vane, ascender",
+            "def_en": ""
+        },
+        {
+            "iju": "asensi",
+            "en": "climb",
+            "def_en": ""
+        },
+        {
+            "iju": "atigo",
+            "en": "reach, contact, connect, achieve",
+            "def_en": ""
+        },
+        {
+            "iju": "ato",
+            "en": "act, performance, behavior, active",
+            "def_en": ""
+        },
+        {
+            "iju": "atolo",
+            "en": "float, buoy, buoyant, a float",
+            "def_en": ""
+        },
+        {
+            "iju": "atomo",
+            "en": "individual, distinct, atom, atomic",
+            "def_en": ""
+        },
+        {
+            "iju": "aviso",
+            "en": "attention, warn, caution, warning, alert, notification",
+            "def_en": ""
+        },
+        {
+            "iju": "bakio",
+            "en": "dull, blunt, obtuse, dumb, idiot",
+            "def_en": ""
+        },
+        {
+            "iju": "balena",
+            "en": "whale, dolphin, porpoise, cetacean",
+            "def_en": ""
+        },
+        {
+            "iju": "balu",
+            "en": "bear (animal)",
+            "def_en": ""
+        },
+        {
+            "iju": "banana",
+            "en": "banana",
+            "def_en": ""
+        },
+        {
+            "iju": "banda",
+            "en": "band, strip, ribbon, tape, stripe",
+            "def_en": ""
+        },
+        {
+            "iju": "bandera",
+            "en": "flag, banner",
+            "def_en": ""
+        },
+        {
+            "iju": "banka",
+            "en": "bank, bench, river bank, financial institution",
+            "def_en": ""
+        },
+        {
+            "iju": "bari",
+            "en": "weight, weigh, heavy",
+            "def_en": ""
+        },
+        {
+            "iju": "bebe",
+            "en": "baby",
+            "def_en": ""
+        },
+        {
+            "iju": "bela",
+            "en": "beautiful, beauty, beautify",
+            "def_en": ""
+        },
+        {
+            "iju": "beli",
+            "en": "stomach, belly, abdomen",
+            "def_en": ""
+        },
+        {
+            "iju": "belo",
+            "en": "war",
+            "def_en": ""
+        },
+        {
+            "iju": "bene",
+            "en": "benefit, advantage, perk, beneficial",
+            "def_en": ""
+        },
+        {
+            "iju": "beso",
+            "en": "kiss, affection",
+            "def_en": ""
+        },
+        {
+            "iju": "bete",
+            "en": "monster, beast, beastly",
+            "def_en": ""
+        },
+        {
+            "iju": "bianka",
+            "en": "white",
+            "def_en": ""
+        },
+        {
+            "iju": "bibe",
+            "en": "drink",
+            "def_en": ""
+        },
+        {
+            "iju": "biko",
+            "en": "beak, peck, spout",
+            "def_en": ""
+        },
+        {
+            "iju": "bileta",
+            "en": "ticket, a pass, bill, banknote",
+            "def_en": ""
+        },
+        {
+            "iju": "bira",
+            "en": "beer, ale",
+            "def_en": ""
+        },
+        {
+            "iju": "boba",
+            "en": "bubble, boil",
+            "def_en": ""
+        },
+        {
+            "iju": "bola",
+            "en": "bowl",
+            "def_en": ""
+        },
+        {
+            "iju": "bonveni",
+            "en": "welcome (lit. 'good comings!')",
+            "def_en": ""
+        },
+        {
+            "iju": "bovi",
+            "en": "cow, bovine, steer, ox, bison, buffalo",
+            "def_en": ""
+        },
+        {
+            "iju": "bubo",
+            "en": "owl",
+            "def_en": ""
+        },
+        {
+            "iju": "buku",
+            "en": "book",
+            "def_en": ""
+        },
+        {
+            "iju": "danke",
+            "en": "thanks, to thank, thankful",
+            "def_en": ""
+        },
+        {
+            "iju": "dara",
+            "en": "stand, place, be firm, position",
+            "def_en": ""
+        },
+        {
+            "iju": "debile",
+            "en": "weak, weakness, feeble, sick",
+            "def_en": ""
+        },
+        {
+            "iju": "dedua",
+            "en": "between, inter-",
+            "def_en": ""
+        },
+        {
+            "iju": "dekera",
+            "en": "right, straight, orthodox",
+            "def_en": "(includes direction, moral, and legal sense)"
+        },
+        {
+            "iju": "denta",
+            "en": "tooth, bite",
+            "def_en": ""
+        },
+        {
+            "iju": "deo",
+            "en": "god, divine",
+            "def_en": ""
+        },
+        {
+            "iju": "dese",
+            "en": "failure, fail",
+            "def_en": ""
+        },
+        {
+            "iju": "deside",
+            "en": "abide, wait for, expect, hope",
+            "def_en": ""
+        },
+        {
+            "iju": "dia",
+            "en": "day, date",
+            "def_en": ""
+        },
+        {
+            "iju": "diamante",
+            "en": "diamond, adamant",
+            "def_en": ""
+        },
+        {
+            "iju": "didia",
+            "en": "today",
+            "def_en": ""
+        },
+        {
+            "iju": "difuse",
+            "en": "spread, diffuse, diffusion",
+            "def_en": ""
+        },
+        {
+            "iju": "dijesite",
+            "en": "digest, digestion",
+            "def_en": ""
+        },
+        {
+            "iju": "diji",
+            "en": "finger, toe, digit",
+            "def_en": ""
+        },
+        {
+            "iju": "dika",
+            "en": "fat, thick",
+            "def_en": ""
+        },
+        {
+            "iju": "dinosoro",
+            "en": "dinosaur",
+            "def_en": ""
+        },
+        {
+            "iju": "dire",
+            "en": "say, tell, utter, recite, utterance, saying",
+            "def_en": ""
+        },
+        {
+            "iju": "disipa",
+            "en": "rubbish, trash, waste (n. and v.), squander",
+            "def_en": ""
+        },
+        {
+            "iju": "dio",
+            "en": "long, length, longitude",
+            "def_en": ""
+        },
+        {
+            "iju": "domo",
+            "en": "home, domestic, reside, domesticate",
+            "def_en": ""
+        },
+        {
+            "iju": "domotera",
+            "en": "country, homeland, domain",
+            "def_en": ""
+        },
+        {
+            "iju": "doragon",
+            "en": "dragon",
+            "def_en": ""
+        },
+        {
+            "iju": "dosum",
+            "en": "back (body), ridge",
+            "def_en": ""
+        },
+        {
+            "iju": "dubi",
+            "en": "doubt",
+            "def_en": ""
+        },
+        {
+            "iju": "dufugo",
+            "en": "brown",
+            "def_en": ""
+        },
+        {
+            "iju": "duka",
+            "en": "suffer, pain, suffering, hurt, painful",
+            "def_en": ""
+        },
+        {
+            "iju": "duko",
+            "en": "lead, draw (along)",
+            "def_en": ""
+        },
+        {
+            "iju": "dulo",
+            "en": "slave, servant, serf, enslave",
+            "def_en": ""
+        },
+        {
+            "iju": "dusa",
+            "en": "rain, shower, to shower, downpour",
+            "def_en": ""
+        },
+        {
+            "iju": "edo",
+            "en": "eat, consume, use up, enjoy",
+            "def_en": ""
+        },
+        {
+            "iju": "edukate",
+            "en": "teach, educate, education, educated",
+            "def_en": ""
+        },
+        {
+            "iju": "egali",
+            "en": "equal, equality, equation, equally",
+            "def_en": ""
+        },
+        {
+            "iju": "ego",
+            "en": "self, own (adj)",
+            "def_en": ""
+        },
+        {
+            "iju": "eki",
+            "en": "out, ex-, away, external",
+            "def_en": ""
+        },
+        {
+            "iju": "ekimotu",
+            "en": "remove, discard, reject",
+            "def_en": ""
+        },
+        {
+            "iju": "ekina",
+            "en": "echo, reflection",
+            "def_en": ""
+        },
+        {
+            "iju": "ekusa",
+            "en": "horse, donkey, mule",
+            "def_en": ""
+        },
+        {
+            "iju": "elasi",
+            "en": "spring, coil, elastic, springy",
+            "def_en": ""
+        },
+        {
+            "iju": "elefante",
+            "en": "elephant",
+            "def_en": ""
+        },
+        {
+            "iju": "elika",
+            "en": "helix, curl, twist, curly, spiral, coil, propeller",
+            "def_en": ""
+        },
+        {
+            "iju": "emare",
+            "en": "island",
+            "def_en": ""
+        },
+        {
+            "iju": "emoti",
+            "en": "emotion, emotional, passionate, emote",
+            "def_en": ""
+        },
+        {
+            "iju": "eneji",
+            "en": "energy, energize, energetic",
+            "def_en": ""
+        },
+        {
+            "iju": "enemi",
+            "en": "enemy, nemesis",
+            "def_en": ""
+        },
+        {
+            "iju": "enfugo",
+            "en": "hell, damn, hellish",
+            "def_en": ""
+        },
+        {
+            "iju": "entero",
+            "en": "insides, intestines, bowel, entrails, gut",
+            "def_en": ""
+        },
+        {
+            "iju": "enum",
+            "en": "pot, pan, cauldron, crucible, saucepan, kettle",
+            "def_en": ""
+        },
+        {
+            "iju": "enumu",
+            "en": "impress, express, intuit, impact",
+            "def_en": ""
+        },
+        {
+            "iju": "envasa",
+            "en": "dive, plunge, submerge",
+            "def_en": ""
+        },
+        {
+            "iju": "envi",
+            "en": "envy, jealous",
+            "def_en": ""
+        },
+        {
+            "iju": "ere",
+            "en": "oar, rudder, to row",
+            "def_en": ""
+        },
+        {
+            "iju": "ese",
+            "en": "east",
+            "def_en": ""
+        },
+        {
+            "iju": "etudi",
+            "en": "learn, study, research",
+            "def_en": ""
+        },
+        {
+            "iju": "etudila",
+            "en": "school, institution",
+            "def_en": ""
+        },
+        {
+            "iju": "evento",
+            "en": "event, case (instance), occurrence",
+            "def_en": ""
+        },
+        {
+            "iju": "evida",
+            "en": "avoid, dodge, shun, miss",
+            "def_en": ""
+        },
+        {
+            "iju": "fabula",
+            "en": "theater, theatrical, imagined",
+            "def_en": ""
+        },
+        {
+            "iju": "fari",
+            "en": "flour, dust, a granulated substance, sand, grind",
+            "def_en": ""
+        },
+        {
+            "iju": "fasi",
+            "en": "face (n), turn towards, feature (adj)",
+            "def_en": ""
+        },
+        {
+            "iju": "fasile",
+            "en": "easy, ease, simple, straightforward",
+            "def_en": ""
+        },
+        {
+            "iju": "fatigo",
+            "en": "tire, tired",
+            "def_en": ""
+        },
+        {
+            "iju": "fava",
+            "en": "bean, legume, pea, lentil",
+            "def_en": ""
+        },
+        {
+            "iju": "febere",
+            "en": "fever, feverish",
+            "def_en": ""
+        },
+        {
+            "iju": "feneta",
+            "en": "window, aperture",
+            "def_en": ""
+        },
+        {
+            "iju": "feo",
+            "en": "ugly",
+            "def_en": ""
+        },
+        {
+            "iju": "fero",
+            "en": "iron, steel",
+            "def_en": ""
+        },
+        {
+            "iju": "fiba",
+            "en": "fiber, string, thread, rope, wire, ply, roughage, strand",
+            "def_en": ""
+        },
+        {
+            "iju": "fide",
+            "en": "faith, trust (n + v), loyal",
+            "def_en": ""
+        },
+        {
+            "iju": "fideni",
+            "en": "match, fit, conform",
+            "def_en": ""
+        },
+        {
+            "iju": "figura",
+            "en": "figure, form, shape, structure, statue, figurine",
+            "def_en": ""
+        },
+        {
+            "iju": "fili",
+            "en": "son, daughter",
+            "def_en": ""
+        },
+        {
+            "iju": "fiore",
+            "en": "flower",
+            "def_en": ""
+        },
+        {
+            "iju": "fisika",
+            "en": "physical, physique, physics",
+            "def_en": ""
+        },
+        {
+            "iju": "fobo",
+            "en": "fear, horror, fearful, scary",
+            "def_en": ""
+        },
+        {
+            "iju": "foli",
+            "en": "sheet, leaf, flat, flatten",
+            "def_en": ""
+        },
+        {
+            "iju": "fonte",
+            "en": "fountain, spring, well",
+            "def_en": ""
+        },
+        {
+            "iju": "foreta",
+            "en": "forest",
+            "def_en": ""
+        },
+        {
+            "iju": "fosi",
+            "en": "dig, bury",
+            "def_en": ""
+        },
+        {
+            "iju": "fugaja",
+            "en": "oven, furnace, heater",
+            "def_en": ""
+        },
+        {
+            "iju": "fugolumen",
+            "en": "fireworks",
+            "def_en": ""
+        },
+        {
+            "iju": "fuji",
+            "en": "flee, escape, run away",
+            "def_en": ""
+        },
+        {
+            "iju": "funda",
+            "en": "base, foundation, ground, floor, basis, fundamental",
+            "def_en": ""
+        },
+        {
+            "iju": "fundo",
+            "en": "scatter, shed, pour out",
+            "def_en": ""
+        },
+        {
+            "iju": "fungi",
+            "en": "fungus, mold, mildew",
+            "def_en": ""
+        },
+        {
+            "iju": "furi",
+            "en": "anger, mad, furious",
+            "def_en": ""
+        },
+        {
+            "iju": "gam",
+            "en": "gram (SI)",
+            "def_en": ""
+        },
+        {
+            "iju": "gana",
+            "en": "win, gain, victory, earn, earnings, profit, prize",
+            "def_en": ""
+        },
+        {
+            "iju": "garaje",
+            "en": "garage",
+            "def_en": ""
+        },
+        {
+            "iju": "gare",
+            "en": "station, depot",
+            "def_en": ""
+        },
+        {
+            "iju": "gato",
+            "en": "cat, feline, catty",
+            "def_en": ""
+        },
+        {
+            "iju": "geko",
+            "en": "lizard",
+            "def_en": ""
+        },
+        {
+            "iju": "gota",
+            "en": "drop, bead, blob, spot, drip",
+            "def_en": ""
+        },
+        {
+            "iju": "gotama",
+            "en": "spill, gush",
+            "def_en": ""
+        },
+        {
+            "iju": "gule",
+            "en": "throat, gullet",
+            "def_en": ""
+        },
+        {
+            "iju": "guru",
+            "en": "teacher, expert, priest, guru",
+            "def_en": ""
+        },
+        {
+            "iju": "ia",
+            "en": "hear, listen, ear",
+            "def_en": ""
+        },
+        {
+            "iju": "idela",
+            "en": "idea, concept, conceptual, ideate",
+            "def_en": ""
+        },
+        {
+            "iju": "igem",
+            "en": "puzzle, enigma, riddle",
+            "def_en": ""
+        },
+        {
+            "iju": "iki",
+            "en": "hit, knock, strike",
+            "def_en": ""
+        },
+        {
+            "iju": "imbe",
+            "en": "rain, storm",
+            "def_en": ""
+        },
+        {
+            "iju": "impedi",
+            "en": "barrage, dam, block, impede, obstruct, hinder",
+            "def_en": ""
+        },
+        {
+            "iju": "imperi",
+            "en": "command, imperative, rule, empire, imperial",
+            "def_en": ""
+        },
+        {
+            "iju": "impono",
+            "en": "impose, insert, thrust, copulate, f***",
+            "def_en": ""
+        },
+        {
+            "iju": "impoto",
+            "en": "important, main, principal, dominant, supreme",
+            "def_en": ""
+        },
+        {
+            "iju": "infan",
+            "en": "dumb, mute, foolish",
+            "def_en": ""
+        },
+        {
+            "iju": "inkase",
+            "en": "prison, jail, imprison",
+            "def_en": ""
+        },
+        {
+            "iju": "ino",
+            "en": "swim",
+            "def_en": ""
+        },
+        {
+            "iju": "inseto",
+            "en": "insect, bug, pest, bother",
+            "def_en": ""
+        },
+        {
+            "iju": "intera",
+            "en": "as long as, while, meanwhile",
+            "def_en": ""
+        },
+        {
+            "iju": "intero",
+            "en": "examine, investigate, trace",
+            "def_en": ""
+        },
+        {
+            "iju": "inunda",
+            "en": "flood, torrent, inundate, overwhelm, overwhelming",
+            "def_en": ""
+        },
+        {
+            "iju": "iosa",
+            "en": "entitle, justify, right, merit",
+            "def_en": ""
+        },
+        {
+            "iju": "irisa",
+            "en": "rainbow",
+            "def_en": ""
+        },
+        {
+            "iju": "jage",
+            "en": "search, hunt, pursuit, seek, quest",
+            "def_en": ""
+        },
+        {
+            "iju": "janji",
+            "en": "answer, promise, vow, pledge, swear",
+            "def_en": ""
+        },
+        {
+            "iju": "janu",
+            "en": "door, gate",
+            "def_en": ""
+        },
+        {
+            "iju": "jelum",
+            "en": "ice, frozen",
+            "def_en": ""
+        },
+        {
+            "iju": "jene",
+            "en": "origin, birth, give birth",
+            "def_en": ""
+        },
+        {
+            "iju": "jeni",
+            "en": "parent",
+            "def_en": ""
+        },
+        {
+            "iju": "jenti",
+            "en": "polite, gentle, gracious, courteous",
+            "def_en": ""
+        },
+        {
+            "iju": "jeti",
+            "en": "throw, shot, shoot, hit",
+            "def_en": ""
+        },
+        {
+            "iju": "jin",
+            "en": "gold, golden",
+            "def_en": ""
+        },
+        {
+            "iju": "jira",
+            "en": "turn, gyrate, spin, whirl",
+            "def_en": ""
+        },
+        {
+            "iju": "joku",
+            "en": "joke, jest",
+            "def_en": ""
+        },
+        {
+            "iju": "joli",
+            "en": "happy, joy, frolic, enjoy",
+            "def_en": ""
+        },
+        {
+            "iju": "junkore",
+            "en": "agree, consent, admit, grant",
+            "def_en": ""
+        },
+        {
+            "iju": "juve",
+            "en": "cheek, jowl",
+            "def_en": ""
+        },
+        {
+            "iju": "juse",
+            "en": "until",
+            "def_en": ""
+        },
+        {
+            "iju": "kabon",
+            "en": "carbon, coal",
+            "def_en": ""
+        },
+        {
+            "iju": "kadi",
+            "en": "lo, behold",
+            "def_en": "(lit. what-this!)"
+        },
+        {
+            "iju": "kado",
+            "en": "fall, drop",
+            "def_en": ""
+        },
+        {
+            "iju": "kafe",
+            "en": "coffee",
+            "def_en": ""
+        },
+        {
+            "iju": "kaje",
+            "en": "cage, ribcage",
+            "def_en": ""
+        },
+        {
+            "iju": "kakajo",
+            "en": "chocolate",
+            "def_en": ""
+        },
+        {
+            "iju": "kalenda",
+            "en": "calendar, schedule, timetable, ledger",
+            "def_en": ""
+        },
+        {
+            "iju": "kaliga",
+            "en": "shoe",
+            "def_en": ""
+        },
+        {
+            "iju": "kalite",
+            "en": "evening, night",
+            "def_en": ""
+        },
+        {
+            "iju": "kama",
+            "en": "bed, mat",
+            "def_en": ""
+        },
+        {
+            "iju": "kamala",
+            "en": "bedroom",
+            "def_en": ""
+        },
+        {
+            "iju": "kamale",
+            "en": "hotel",
+            "def_en": "(originally kamalela, now shortened)"
+        },
+        {
+            "iju": "kamalero",
+            "en": "hotelier",
+            "def_en": ""
+        },
+        {
+            "iju": "kamisa",
+            "en": "shirt",
+            "def_en": ""
+        },
+        {
+            "iju": "kandela",
+            "en": "candle",
+            "def_en": ""
+        },
+        {
+            "iju": "kani",
+            "en": "dog",
+            "def_en": ""
+        },
+        {
+            "iju": "kanta",
+            "en": "letter, literature, character, spell, spelling, literary",
+            "def_en": ""
+        },
+        {
+            "iju": "kanti",
+            "en": "sing, song, tune, melody",
+            "def_en": ""
+        },
+        {
+            "iju": "kapa",
+            "en": "capture, catch, seize, grasp, captive, grab, pick, collect",
+            "def_en": ""
+        },
+        {
+            "iju": "kapani",
+            "en": "subject (thing), topic, theme",
+            "def_en": ""
+        },
+        {
+            "iju": "kaparo",
+            "en": "subject (person), subordinate, employee",
+            "def_en": ""
+        },
+        {
+            "iju": "kaparuse",
+            "en": "trap",
+            "def_en": ""
+        },
+        {
+            "iju": "kara",
+            "en": "meat, flesh",
+            "def_en": ""
+        },
+        {
+            "iju": "kare",
+            "en": "lose, loss",
+            "def_en": ""
+        },
+        {
+            "iju": "karo",
+            "en": "car, vehicle, drive",
+            "def_en": ""
+        },
+        {
+            "iju": "kasa",
+            "en": "house, building",
+            "def_en": ""
+        },
+        {
+            "iju": "kasi",
+            "en": "almost",
+            "def_en": ""
+        },
+        {
+            "iju": "kata",
+            "en": "cut, incision, slice, chop",
+            "def_en": ""
+        },
+        {
+            "iju": "katalin",
+            "en": "cross, intersection",
+            "def_en": ""
+        },
+        {
+            "iju": "katana",
+            "en": "sword",
+            "def_en": ""
+        },
+        {
+            "iju": "katera",
+            "en": "square, plaza",
+            "def_en": ""
+        },
+        {
+            "iju": "katio",
+            "en": "shake, harass, batter",
+            "def_en": ""
+        },
+        {
+            "iju": "kavena",
+            "en": "cave, cavern",
+            "def_en": ""
+        },
+        {
+            "iju": "keju",
+            "en": "cheese",
+            "def_en": ""
+        },
+        {
+            "iju": "keki",
+            "en": "cake",
+            "def_en": ""
+        },
+        {
+            "iju": "kelun",
+            "en": "air, atmosphere, gas, heaven, weather",
+            "def_en": ""
+        },
+        {
+            "iju": "keluni",
+            "en": "blue",
+            "def_en": ""
+        },
+        {
+            "iju": "kelunkata",
+            "en": "airplane",
+            "def_en": ""
+        },
+        {
+            "iju": "keno",
+            "en": "discordant, odd, strange, forboding",
+            "def_en": ""
+        },
+        {
+            "iju": "kera",
+            "en": "horn, spike",
+            "def_en": "(sense of 'horn' covers both animal and instrument)"
+        },
+        {
+            "iju": "keri",
+            "en": "complain, query, moan",
+            "def_en": ""
+        },
+        {
+            "iju": "kesa",
+            "en": "exchange, trade, barter, replace",
+            "def_en": ""
+        },
+        {
+            "iju": "kesum",
+            "en": "clause, comma",
+            "def_en": ""
+        },
+        {
+            "iju": "keva",
+            "en": "deer",
+            "def_en": ""
+        },
+        {
+            "iju": "kia",
+            "en": "key, unlock",
+            "def_en": ""
+        },
+        {
+            "iju": "kinde",
+            "en": "child",
+            "def_en": ""
+        },
+        {
+            "iju": "kino",
+            "en": "film (n + v), movie, cinema",
+            "def_en": ""
+        },
+        {
+            "iju": "kio",
+            "en": "provoke, rouse, stir, wake up",
+            "def_en": ""
+        },
+        {
+            "iju": "kite",
+            "en": "leave, quit, abandon, exit",
+            "def_en": ""
+        },
+        {
+            "iju": "kito",
+            "en": "any (determiner), whichever, anyone",
+            "def_en": ""
+        },
+        {
+            "iju": "kitum",
+            "en": "excited, aroused",
+            "def_en": ""
+        },
+        {
+            "iju": "koda",
+            "en": "end, tail, coda",
+            "def_en": ""
+        },
+        {
+            "iju": "kodo",
+            "en": "because, since",
+            "def_en": ""
+        },
+        {
+            "iju": "kogito",
+            "en": "design, sketch, blueprint, pattern",
+            "def_en": ""
+        },
+        {
+            "iju": "kofundo",
+            "en": "mix, mingle, combine",
+            "def_en": ""
+        },
+        {
+            "iju": "koke",
+            "en": "each, respectively",
+            "def_en": ""
+        },
+        {
+            "iju": "kolenka",
+            "en": "knee",
+            "def_en": ""
+        },
+        {
+            "iju": "koli",
+            "en": "hill, mountain",
+            "def_en": ""
+        },
+        {
+            "iju": "kolum",
+            "en": "column, pillar, pole, spine; neck",
+            "def_en": ""
+        },
+        {
+            "iju": "komi",
+            "en": "follow along",
+            "def_en": ""
+        },
+        {
+            "iju": "komun",
+            "en": "community, communal, public, society, social",
+            "def_en": ""
+        },
+        {
+            "iju": "konka",
+            "en": "shell, casing",
+            "def_en": ""
+        },
+        {
+            "iju": "konkuro",
+            "en": "meet, encounter, meeting",
+            "def_en": ""
+        },
+        {
+            "iju": "konten",
+            "en": "content, happy, smiling",
+            "def_en": ""
+        },
+        {
+            "iju": "kubi",
+            "en": "brick, cube, block",
+            "def_en": ""
+        },
+        {
+            "iju": "kubika",
+            "en": "container, partition",
+            "def_en": ""
+        },
+        {
+            "iju": "kubita",
+            "en": "elbow, nudge, cubit",
+            "def_en": ""
+        },
+        {
+            "iju": "kudo",
+            "en": "hammer, mallet",
+            "def_en": ""
+        },
+        {
+            "iju": "kulin",
+            "en": "kitchen, cook (v)",
+            "def_en": ""
+        },
+        {
+            "iju": "kupio",
+            "en": "desire, yearn, crave, obsess, greed",
+            "def_en": ""
+        },
+        {
+            "iju": "kuri",
+            "en": "run, sprint, jog",
+            "def_en": ""
+        },
+        {
+            "iju": "kuru",
+            "en": "bend, curve, flex",
+            "def_en": ""
+        },
+        {
+            "iju": "labi",
+            "en": "lip, rim, brim",
+            "def_en": ""
+        },
+        {
+            "iju": "laboro",
+            "en": "work, labor, hard-working, job",
+            "def_en": ""
+        },
+        {
+            "iju": "lagima",
+            "en": "tears, cry (v)",
+            "def_en": ""
+        },
+        {
+            "iju": "lago",
+            "en": "lake, loch, pond",
+            "def_en": ""
+        },
+        {
+            "iju": "laki",
+            "en": "milk, milky",
+            "def_en": ""
+        },
+        {
+            "iju": "lakon",
+            "en": "short (length), curt, brief",
+            "def_en": ""
+        },
+        {
+            "iju": "lamen",
+            "en": "sorry (n + v), contrition, remorse",
+            "def_en": ""
+        },
+        {
+            "iju": "lamina",
+            "en": "plate, dish",
+            "def_en": ""
+        },
+        {
+            "iju": "lana",
+            "en": "wool",
+            "def_en": ""
+        },
+        {
+            "iju": "lase",
+            "en": "let, allow, license, permission, licit",
+            "def_en": ""
+        },
+        {
+            "iju": "lati",
+            "en": "wide, broad, width, latitude",
+            "def_en": ""
+        },
+        {
+            "iju": "lava",
+            "en": "wash",
+            "def_en": ""
+        },
+        {
+            "iju": "lave",
+            "en": "tub, barrel, vat, tank",
+            "def_en": ""
+        },
+        {
+            "iju": "lego",
+            "en": "choose, choice, pluck (out)",
+            "def_en": ""
+        },
+        {
+            "iju": "leje",
+            "en": "read, a reading, well-read",
+            "def_en": ""
+        },
+        {
+            "iju": "leni",
+            "en": "smooth, soft, sleek, even",
+            "def_en": ""
+        },
+        {
+            "iju": "lenta",
+            "en": "slow, slowly",
+            "def_en": ""
+        },
+        {
+            "iju": "leon",
+            "en": "lion, tiger, panther, a big cat",
+            "def_en": ""
+        },
+        {
+            "iju": "lepusa",
+            "en": "rabbit, hare, bunny",
+            "def_en": ""
+        },
+        {
+            "iju": "levi",
+            "en": "left (direction)",
+            "def_en": ""
+        },
+        {
+            "iju": "libera",
+            "en": "freedom, free, liberate, release",
+            "def_en": ""
+        },
+        {
+            "iju": "liga",
+            "en": "tie, bind, knot, league, link, connection",
+            "def_en": ""
+        },
+        {
+            "iju": "lila",
+            "en": "purple, lilac",
+            "def_en": ""
+        },
+        {
+            "iju": "limon",
+            "en": "lemon, lime, citrus",
+            "def_en": ""
+        },
+        {
+            "iju": "linga",
+            "en": "tongue, lick, language",
+            "def_en": ""
+        },
+        {
+            "iju": "linte",
+            "en": "cloth, fabric",
+            "def_en": ""
+        },
+        {
+            "iju": "lipo",
+            "en": "fat, fatty, grease, fatten, fry (v)",
+            "def_en": ""
+        },
+        {
+            "iju": "lira",
+            "en": "last, previous",
+            "def_en": ""
+        },
+        {
+            "iju": "lisa",
+            "en": "fox",
+            "def_en": ""
+        },
+        {
+            "iju": "lita",
+            "en": "litre (SI)",
+            "def_en": ""
+        },
+        {
+            "iju": "litate",
+            "en": "prey, target",
+            "def_en": ""
+        },
+        {
+            "iju": "litigo",
+            "en": "negotiate, conduct business",
+            "def_en": ""
+        },
+        {
+            "iju": "litora",
+            "en": "shore, beach, coast, littoral",
+            "def_en": ""
+        },
+        {
+            "iju": "loko",
+            "en": "put, lay, place",
+            "def_en": ""
+        },
+        {
+            "iju": "lokum",
+            "en": "placement, rank, status, order",
+            "def_en": ""
+        },
+        {
+            "iju": "lonje",
+            "en": "far, distance, remote, extreme",
+            "def_en": ""
+        },
+        {
+            "iju": "lubi",
+            "en": "slip, slide, slippery, glide",
+            "def_en": ""
+        },
+        {
+            "iju": "lumen",
+            "en": "star, highlight (n + v), celebrity",
+            "def_en": ""
+        },
+        {
+            "iju": "lunon",
+            "en": "month, monthly",
+            "def_en": ""
+        },
+        {
+            "iju": "lupo",
+            "en": "wolf",
+            "def_en": ""
+        },
+        {
+            "iju": "maje",
+            "en": "Mr, Ms, sir, madam, lord, master",
+            "def_en": ""
+        },
+        {
+            "iju": "makina",
+            "en": "machine, engine, device, appliance",
+            "def_en": ""
+        },
+        {
+            "iju": "makula",
+            "en": "mark, stain, blemish, spot",
+            "def_en": ""
+        },
+        {
+            "iju": "malum",
+            "en": "fate, destiny",
+            "def_en": ""
+        },
+        {
+            "iju": "mandi",
+            "en": "jaw, mandible",
+            "def_en": ""
+        },
+        {
+            "iju": "mare",
+            "en": "ocean, sea, marine",
+            "def_en": ""
+        },
+        {
+            "iju": "masa",
+            "en": "mass, pile, heap, amass, massive",
+            "def_en": ""
+        },
+        {
+            "iju": "masafigura",
+            "en": "information, message",
+            "def_en": ""
+        },
+        {
+            "iju": "masama",
+            "en": "bigger, more than, expanded, extra",
+            "def_en": ""
+        },
+        {
+            "iju": "medele",
+            "en": "smaller, less of",
+            "def_en": ""
+        },
+        {
+            "iju": "medi",
+            "en": "average, medium, normal, usual, standard, norm, middle, noon",
+            "def_en": ""
+        },
+        {
+            "iju": "medidu",
+            "en": "enough, sufficient",
+            "def_en": ""
+        },
+        {
+            "iju": "mela",
+            "en": "honey",
+            "def_en": ""
+        },
+        {
+            "iju": "mendasi",
+            "en": "lie, false, deceive, deception",
+            "def_en": ""
+        },
+        {
+            "iju": "meno",
+            "en": "less (comparison), fewer, minus",
+            "def_en": ""
+        },
+        {
+            "iju": "menola",
+            "en": "negative, ineffectual, wasteful, destructive",
+            "def_en": ""
+        },
+        {
+            "iju": "meru",
+            "en": "brief, short",
+            "def_en": ""
+        },
+        {
+            "iju": "midori",
+            "en": "green",
+            "def_en": ""
+        },
+        {
+            "iju": "minu",
+            "en": "minute",
+            "def_en": ""
+        },
+        {
+            "iju": "miro",
+            "en": "wonder, surprise, amaze",
+            "def_en": ""
+        },
+        {
+            "iju": "mise",
+            "en": "sad, unhappy, unfortunate, mourn",
+            "def_en": ""
+        },
+        {
+            "iju": "mito",
+            "en": "send, dispatch, direct, drive",
+            "def_en": ""
+        },
+        {
+            "iju": "mimori",
+            "en": "kill, murder, destroy",
+            "def_en": ""
+        },
+        {
+            "iju": "mogi",
+            "en": "fly, gnat, mosquito",
+            "def_en": ""
+        },
+        {
+            "iju": "mori",
+            "en": "death, die, dead",
+            "def_en": ""
+        },
+        {
+            "iju": "moti",
+            "en": "mess, disorder",
+            "def_en": ""
+        },
+        {
+            "iju": "motu",
+            "en": "move, movement, motion, movie, travel, journey",
+            "def_en": ""
+        },
+        {
+            "iju": "mudi",
+            "en": "purpose, goal, objective, aim, intent, target, meaning",
+            "def_en": ""
+        },
+        {
+            "iju": "muijen",
+            "en": "grandparent",
+            "def_en": ""
+        },
+        {
+            "iju": "mundo",
+            "en": "world, globe, global, international",
+            "def_en": ""
+        },
+        {
+            "iju": "munera",
+            "en": "service, fee, compensation, favour",
+            "def_en": ""
+        },
+        {
+            "iju": "muro",
+            "en": "wall",
+            "def_en": ""
+        },
+        {
+            "iju": "muso",
+            "en": "museum",
+            "def_en": ""
+        },
+        {
+            "iju": "musika",
+            "en": "music",
+            "def_en": ""
+        },
+        {
+            "iju": "muta",
+            "en": "change, modify, modification, mutation",
+            "def_en": ""
+        },
+        {
+            "iju": "naga",
+            "en": "snake, slither",
+            "def_en": ""
+        },
+        {
+            "iju": "nase",
+            "en": "nose",
+            "def_en": ""
+        },
+        {
+            "iju": "nata",
+            "en": "cream, creamy",
+            "def_en": ""
+        },
+        {
+            "iju": "natura",
+            "en": "nature, natural, quality, property, attribute",
+            "def_en": ""
+        },
+        {
+            "iju": "navi",
+            "en": "boat, ship",
+            "def_en": ""
+        },
+        {
+            "iju": "nida",
+            "en": "nest, hive, den",
+            "def_en": ""
+        },
+        {
+            "iju": "ningo",
+            "en": "snow",
+            "def_en": ""
+        },
+        {
+            "iju": "ninja",
+            "en": "spy (noun), snoop, scout, surveil",
+            "def_en": ""
+        },
+        {
+            "iju": "nio",
+            "en": "neutral, bland, neuter, boring, impartial",
+            "def_en": ""
+        },
+        {
+            "iju": "nise",
+            "en": "sneeze",
+            "def_en": ""
+        },
+        {
+            "iju": "nobi",
+            "en": "lump, button, knob, stud",
+            "def_en": ""
+        },
+        {
+            "iju": "noga",
+            "en": "leg",
+            "def_en": ""
+        },
+        {
+            "iju": "nomile",
+            "en": "sentence",
+            "def_en": ""
+        },
+        {
+            "iju": "nonun",
+            "en": "never",
+            "def_en": ""
+        },
+        {
+            "iju": "noranko",
+            "en": "common",
+            "def_en": ""
+        },
+        {
+            "iju": "nore",
+            "en": "north",
+            "def_en": ""
+        },
+        {
+            "iju": "nube",
+            "en": "cloud, cloudy",
+            "def_en": ""
+        },
+        {
+            "iju": "nubo",
+            "en": "huband, wife",
+            "def_en": ""
+        },
+        {
+            "iju": "nudu",
+            "en": "bare, nude, naked, nudity",
+            "def_en": ""
+        },
+        {
+            "iju": "nuga",
+            "en": "rub, friction, massage, caress, tickle, chafe",
+            "def_en": ""
+        },
+        {
+            "iju": "nuki",
+            "en": "nut",
+            "def_en": ""
+        },
+        {
+            "iju": "nun",
+            "en": "now",
+            "def_en": ""
+        },
+        {
+            "iju": "odasi",
+            "en": "audacity, dare, daring, bold, brave",
+            "def_en": ""
+        },
+        {
+            "iju": "odi",
+            "en": "hate, hatred, enmity, evil",
+            "def_en": ""
+        },
+        {
+            "iju": "oko",
+            "en": "eye, glance, one's sight",
+            "def_en": ""
+        },
+        {
+            "iju": "ole",
+            "en": "oil, unctuous",
+            "def_en": ""
+        },
+        {
+            "iju": "ora",
+            "en": "hour, o'clock, clock time",
+            "def_en": ""
+        },
+        {
+            "iju": "orakulo",
+            "en": "predict, prophecy, prediction, prophetic",
+            "def_en": ""
+        },
+        {
+            "iju": "oranje",
+            "en": "orange",
+            "def_en": ""
+        },
+        {
+            "iju": "oro",
+            "en": "entreat, please, beg",
+            "def_en": ""
+        },
+        {
+            "iju": "oso",
+            "en": "bone",
+            "def_en": ""
+        },
+        {
+            "iju": "otadara",
+            "en": "instead",
+            "def_en": ""
+        },
+        {
+            "iju": "ovi",
+            "en": "lamb, sheep",
+            "def_en": ""
+        },
+        {
+            "iju": "ovo",
+            "en": "egg",
+            "def_en": ""
+        },
+        {
+            "iju": "pagina",
+            "en": "page, paper",
+            "def_en": ""
+        },
+        {
+            "iju": "papilon",
+            "en": "butterfly, moth",
+            "def_en": ""
+        },
+        {
+            "iju": "pari",
+            "en": "bet, wager, gamble, risk, maybe, chance",
+            "def_en": ""
+        },
+        {
+            "iju": "pase",
+            "en": "peace, peaceful",
+            "def_en": ""
+        },
+        {
+            "iju": "pasu",
+            "en": "step, stride, pace, ride",
+            "def_en": ""
+        },
+        {
+            "iju": "patata",
+            "en": "potato",
+            "def_en": ""
+        },
+        {
+            "iju": "pate",
+            "en": "open",
+            "def_en": ""
+        },
+        {
+            "iju": "patero",
+            "en": "support, backing, advocacy, backup, bolster",
+            "def_en": ""
+        },
+        {
+            "iju": "patio",
+            "en": "tolerance, suffering, patience",
+            "def_en": ""
+        },
+        {
+            "iju": "pedi",
+            "en": "foot, by foot, kick, stomp",
+            "def_en": ""
+        },
+        {
+            "iju": "pedo",
+            "en": "walk, ambulate, stroll, hike",
+            "def_en": ""
+        },
+        {
+            "iju": "peko",
+            "en": "wrong, error, sin",
+            "def_en": ""
+        },
+        {
+            "iju": "pele",
+            "en": "skin, surface, peel, hide (animal)",
+            "def_en": ""
+        },
+        {
+            "iju": "pelo",
+            "en": "hair, fur, feather, hairy",
+            "def_en": ""
+        },
+        {
+            "iju": "pena",
+            "en": "feather, quill, pen",
+            "def_en": ""
+        },
+        {
+            "iju": "pende",
+            "en": "period, duration, hang, hanging, suspension, suspense",
+            "def_en": ""
+        },
+        {
+            "iju": "pendo",
+            "en": "buy, pay, payment, spend",
+            "def_en": ""
+        },
+        {
+            "iju": "pepa",
+            "en": "pepper, spicy",
+            "def_en": ""
+        },
+        {
+            "iju": "pera",
+            "en": "by means of, method, process, through",
+            "def_en": ""
+        },
+        {
+            "iju": "peri",
+            "en": "cover, close, shut, seal",
+            "def_en": ""
+        },
+        {
+            "iju": "petito",
+            "en": "request, ask, prayer, invocation, plea, petition, question",
+            "def_en": ""
+        },
+        {
+            "iju": "pila",
+            "en": "yellow",
+            "def_en": ""
+        },
+        {
+            "iju": "piron",
+            "en": "fork",
+            "def_en": ""
+        },
+        {
+            "iju": "pisa",
+            "en": "blow, inflate, puff",
+            "def_en": ""
+        },
+        {
+            "iju": "pisi",
+            "en": "fish",
+            "def_en": ""
+        },
+        {
+            "iju": "polo",
+            "en": "chicken, fowl",
+            "def_en": ""
+        },
+        {
+            "iju": "poma",
+            "en": "fruit (any kind)",
+            "def_en": ""
+        },
+        {
+            "iju": "ponte",
+            "en": "bridge, span, join",
+            "def_en": ""
+        },
+        {
+            "iju": "posi",
+            "en": "later, after, following, then",
+            "def_en": ""
+        },
+        {
+            "iju": "posimedi",
+            "en": "afternoon",
+            "def_en": ""
+        },
+        {
+            "iju": "poto",
+            "en": "carry, transport, transfer, port, cargo",
+            "def_en": ""
+        },
+        {
+            "iju": "pove",
+            "en": "poor, poverty",
+            "def_en": ""
+        },
+        {
+            "iju": "pudeo",
+            "en": "embarrass, shame",
+            "def_en": ""
+        },
+        {
+            "iju": "puga",
+            "en": "butt",
+            "def_en": ""
+        },
+        {
+            "iju": "pule",
+            "en": "plus, more than (comparison), additionally",
+            "def_en": ""
+        },
+        {
+            "iju": "pulela",
+            "en": "positive, productive, constructive",
+            "def_en": ""
+        },
+        {
+            "iju": "punio",
+            "en": "punish, chastise, retaliate",
+            "def_en": ""
+        },
+        {
+            "iju": "punto",
+            "en": "point (at), dot, spot, indicate, pointy, sharp",
+            "def_en": ""
+        },
+        {
+            "iju": "pupe",
+            "en": "doll, puppet, pet",
+            "def_en": ""
+        },
+        {
+            "iju": "puro",
+            "en": "clean, purify, clear",
+            "def_en": ""
+        },
+        {
+            "iju": "radi",
+            "en": "root, rooted, rhizome, tuber",
+            "def_en": ""
+        },
+        {
+            "iju": "raja",
+            "en": "ruler, royal, king, queen",
+            "def_en": ""
+        },
+        {
+            "iju": "rama",
+            "en": "arm, limb, branch",
+            "def_en": ""
+        },
+        {
+            "iju": "rana",
+            "en": "frog, toad",
+            "def_en": ""
+        },
+        {
+            "iju": "random",
+            "en": "random, arbitrary, caprice",
+            "def_en": ""
+        },
+        {
+            "iju": "rapio",
+            "en": "steal, theft, thief, robber",
+            "def_en": ""
+        },
+        {
+            "iju": "ratio",
+            "en": "ratio, rate, proportion, fraction",
+            "def_en": ""
+        },
+        {
+            "iju": "ravena",
+            "en": "raven",
+            "def_en": ""
+        },
+        {
+            "iju": "re",
+            "en": "again, repeat, repetition, re-",
+            "def_en": ""
+        },
+        {
+            "iju": "redi",
+            "en": "ready, available, prepare, preparation",
+            "def_en": ""
+        },
+        {
+            "iju": "refera",
+            "en": "relate, relation, relationship, connection, connect with",
+            "def_en": ""
+        },
+        {
+            "iju": "refere",
+            "en": "refer to, reference, mention, allusion",
+            "def_en": ""
+        },
+        {
+            "iju": "reki",
+            "en": "sit, seat, chair, relax, rest",
+            "def_en": ""
+        },
+        {
+            "iju": "relijon",
+            "en": "religion, religious",
+            "def_en": ""
+        },
+        {
+            "iju": "rena",
+            "en": "kidney",
+            "def_en": ""
+        },
+        {
+            "iju": "repare",
+            "en": "fix, correction, improvement, repair, mend",
+            "def_en": ""
+        },
+        {
+            "iju": "resolu",
+            "en": "decide, decision, adjudicate, resolve, settle",
+            "def_en": ""
+        },
+        {
+            "iju": "retine",
+            "en": "memory, remember",
+            "def_en": ""
+        },
+        {
+            "iju": "reveni",
+            "en": "come back, return",
+            "def_en": ""
+        },
+        {
+            "iju": "rio",
+            "en": "river, stream",
+            "def_en": ""
+        },
+        {
+            "iju": "risa",
+            "en": "rice",
+            "def_en": ""
+        },
+        {
+            "iju": "risi",
+            "en": "laugh",
+            "def_en": ""
+        },
+        {
+            "iju": "rompe",
+            "en": "break, rupture, smash, disrupt",
+            "def_en": ""
+        },
+        {
+            "iju": "rosa",
+            "en": "pink, rose",
+            "def_en": ""
+        },
+        {
+            "iju": "rota",
+            "en": "wheel",
+            "def_en": ""
+        },
+        {
+            "iju": "ruja",
+            "en": "red",
+            "def_en": ""
+        },
+        {
+            "iju": "rusa",
+            "en": "chamber, room, partition, hall, camera",
+            "def_en": ""
+        },
+        {
+            "iju": "ruse",
+            "en": "trick, hoax, ruse, fraud, scam, tricky",
+            "def_en": ""
+        },
+        {
+            "iju": "saga",
+            "en": "story, narrate, fictional",
+            "def_en": ""
+        },
+        {
+            "iju": "saje",
+            "en": "wise, wisdom",
+            "def_en": ""
+        },
+        {
+            "iju": "sali",
+            "en": "leap, jump, bound",
+            "def_en": ""
+        },
+        {
+            "iju": "salo",
+            "en": "salt, salty, seasoning",
+            "def_en": ""
+        },
+        {
+            "iju": "salu",
+            "en": "hello, greet, greeting, salute",
+            "def_en": ""
+        },
+        {
+            "iju": "sange",
+            "en": "blood, bleed",
+            "def_en": ""
+        },
+        {
+            "iju": "sano",
+            "en": "health, healthy, heal",
+            "def_en": ""
+        },
+        {
+            "iju": "sanomanja",
+            "en": "medicine, tablets",
+            "def_en": ""
+        },
+        {
+            "iju": "sapiro",
+            "en": "breathe, breath",
+            "def_en": ""
+        },
+        {
+            "iju": "sakin",
+            "en": "bag, luggage, sack, burden",
+            "def_en": ""
+        },
+        {
+            "iju": "sati",
+            "en": "full, fill, whole, satisfy",
+            "def_en": ""
+        },
+        {
+            "iju": "sava",
+            "en": "save, rescue, salvation, salvage, retrieve",
+            "def_en": ""
+        },
+        {
+            "iju": "savon",
+            "en": "soap",
+            "def_en": ""
+        },
+        {
+            "iju": "sedo",
+            "en": "surrender, submit, yield, give in, submission",
+            "def_en": ""
+        },
+        {
+            "iju": "sefe",
+            "en": "wind, windy",
+            "def_en": ""
+        },
+        {
+            "iju": "seki",
+            "en": "next, follow, subsequent, succeeding",
+            "def_en": ""
+        },
+        {
+            "iju": "sekin",
+            "en": "ax, hatchet, machete, chop, cleave",
+            "def_en": ""
+        },
+        {
+            "iju": "seko",
+            "en": "divide, split, division, separate, apart, hole",
+            "def_en": ""
+        },
+        {
+            "iju": "sekon",
+            "en": "second (time)",
+            "def_en": ""
+        },
+        {
+            "iju": "selebi",
+            "en": "party, celebrate",
+            "def_en": ""
+        },
+        {
+            "iju": "sema",
+            "en": "sew, stich, seam",
+            "def_en": ""
+        },
+        {
+            "iju": "semana",
+            "en": "week, weekly",
+            "def_en": ""
+        },
+        {
+            "iju": "semen",
+            "en": "seed, germ, microbe",
+            "def_en": ""
+        },
+        {
+            "iju": "semi",
+            "en": "half, partial, incompletely",
+            "def_en": ""
+        },
+        {
+            "iju": "senti",
+            "en": "sense, feel, touch, feeling",
+            "def_en": ""
+        },
+        {
+            "iju": "sento",
+            "en": "hundred",
+            "def_en": ""
+        },
+        {
+            "iju": "sera",
+            "en": "late, tardy, delay",
+            "def_en": ""
+        },
+        {
+            "iju": "sete",
+            "en": "thirst, thirsty",
+            "def_en": ""
+        },
+        {
+            "iju": "sibi",
+            "en": "kin, sibling, brother, sister",
+            "def_en": ""
+        },
+        {
+            "iju": "sibila",
+            "en": "whistle, hiss, fizzle, whiz, zip",
+            "def_en": ""
+        },
+        {
+            "iju": "sigi",
+            "en": "sign, mark, symbol, signal, token, logo, point (at)",
+            "def_en": ""
+        },
+        {
+            "iju": "sika",
+            "en": "knife, dagger, stab",
+            "def_en": ""
+        },
+        {
+            "iju": "sikele",
+            "en": "bicycle",
+            "def_en": ""
+        },
+        {
+            "iju": "siko",
+            "en": "dry, dryness",
+            "def_en": ""
+        },
+        {
+            "iju": "silika",
+            "en": "grain, seed, corn, wheat",
+            "def_en": ""
+        },
+        {
+            "iju": "siva",
+            "en": "crop, plants",
+            "def_en": ""
+        },
+        {
+            "iju": "sivale",
+            "en": "garden",
+            "def_en": ""
+        },
+        {
+            "iju": "sivi",
+            "en": "citizen, civilian, civil, civilize",
+            "def_en": ""
+        },
+        {
+            "iju": "sivila",
+            "en": "city",
+            "def_en": ""
+        },
+        {
+            "iju": "solo",
+            "en": "single, alone, only, just",
+            "def_en": ""
+        },
+        {
+            "iju": "sonde",
+            "en": "special, especially, particular, exceptional",
+            "def_en": ""
+        },
+        {
+            "iju": "sonjo",
+            "en": "dream",
+            "def_en": ""
+        },
+        {
+            "iju": "sosita",
+            "en": "business, company",
+            "def_en": ""
+        },
+        {
+            "iju": "sude",
+            "en": "south",
+            "def_en": ""
+        },
+        {
+            "iju": "suko",
+            "en": "suck, suction",
+            "def_en": ""
+        },
+        {
+            "iju": "sukusa",
+            "en": "juice, sap, dirt, taint, corruption",
+            "def_en": ""
+        },
+        {
+            "iju": "suma",
+            "en": "sum, calculate, score",
+            "def_en": ""
+        },
+        {
+            "iju": "suse",
+            "en": "pig, pork, boar",
+            "def_en": ""
+        },
+        {
+            "iju": "susura",
+            "en": "whisper, rustle, murmur",
+            "def_en": ""
+        },
+        {
+            "iju": "taba",
+            "en": "board, plank, beam, slat",
+            "def_en": ""
+        },
+        {
+            "iju": "tabula",
+            "en": "map, chart",
+            "def_en": ""
+        },
+        {
+            "iju": "tado",
+            "en": "stop, halt",
+            "def_en": ""
+        },
+        {
+            "iju": "talum",
+            "en": "heel",
+            "def_en": ""
+        },
+        {
+            "iju": "tambo",
+            "en": "drum",
+            "def_en": ""
+        },
+        {
+            "iju": "tamen",
+            "en": "although, though, nevertheless, in spite of, however",
+            "def_en": ""
+        },
+        {
+            "iju": "tape",
+            "en": "carpet, rug",
+            "def_en": ""
+        },
+        {
+            "iju": "te",
+            "en": "tea",
+            "def_en": ""
+        },
+        {
+            "iju": "tego",
+            "en": "protect, conceal, guard, safe",
+            "def_en": ""
+        },
+        {
+            "iju": "teni",
+            "en": "hold, grasp, cling to",
+            "def_en": ""
+        },
+        {
+            "iju": "tensa",
+            "en": "tense, stretch, strained",
+            "def_en": "(includes action, state, and grammatical function of 'tense')"
+        },
+        {
+            "iju": "tenta",
+            "en": "try, attempt, experiment, trial, tentative, provisional",
+            "def_en": ""
+        },
+        {
+            "iju": "tenu",
+            "en": "narrow, thin, strait",
+            "def_en": ""
+        },
+        {
+            "iju": "tetum",
+            "en": "ceiling, roof",
+            "def_en": ""
+        },
+        {
+            "iju": "tingi",
+            "en": "high, tall, height",
+            "def_en": ""
+        },
+        {
+            "iju": "tipo",
+            "en": "type, quality, kind, typical",
+            "def_en": ""
+        },
+        {
+            "iju": "tiponi",
+            "en": "example, specimen",
+            "def_en": ""
+        },
+        {
+            "iju": "tira",
+            "en": "pull, tug",
+            "def_en": ""
+        },
+        {
+            "iju": "tivi",
+            "en": "TV, television",
+            "def_en": ""
+        },
+        {
+            "iju": "tore",
+            "en": "tower, skyscraper, turret, steeple, minaret",
+            "def_en": ""
+        },
+        {
+            "iju": "tori",
+            "en": "bird",
+            "def_en": ""
+        },
+        {
+            "iju": "tota",
+            "en": "whole, total",
+            "def_en": ""
+        },
+        {
+            "iju": "tubu",
+            "en": "tube, straw, pipe",
+            "def_en": ""
+        },
+        {
+            "iju": "toti",
+            "en": "turtle, tortoise",
+            "def_en": ""
+        },
+        {
+            "iju": "tume",
+            "en": "swelling, bulge",
+            "def_en": ""
+        },
+        {
+            "iju": "tunomi",
+            "en": "manage, assign, delegate",
+            "def_en": ""
+        },
+        {
+            "iju": "ubuntu",
+            "en": "kind, nice, humane, humaneness, solidarity",
+            "def_en": ""
+        },
+        {
+            "iju": "udan",
+            "en": "shrimp, lobster, a crustacean",
+            "def_en": ""
+        },
+        {
+            "iju": "ujana",
+            "en": "young, youth, a youth",
+            "def_en": ""
+        },
+        {
+            "iju": "ukite",
+            "en": "forgive, renounce, dismiss",
+            "def_en": ""
+        },
+        {
+            "iju": "umbe",
+            "en": "shadow, shade, obscure, hide, hidden",
+            "def_en": ""
+        },
+        {
+            "iju": "umero",
+            "en": "shoulder, shrug",
+            "def_en": ""
+        },
+        {
+            "iju": "umu",
+            "en": "low, bottom, depressed, press",
+            "def_en": ""
+        },
+        {
+            "iju": "unda",
+            "en": "wave, undulation, vibrate",
+            "def_en": ""
+        },
+        {
+            "iju": "unode",
+            "en": "sensei, master (of), professional",
+            "def_en": ""
+        },
+        {
+            "iju": "ungu",
+            "en": "nail, hoof, claw",
+            "def_en": ""
+        },
+        {
+            "iju": "unun",
+            "en": "ever",
+            "def_en": ""
+        },
+        {
+            "iju": "usedo",
+            "en": "hungry",
+            "def_en": ""
+        },
+        {
+            "iju": "usu",
+            "en": "practice, skill, art",
+            "def_en": ""
+        },
+        {
+            "iju": "utero",
+            "en": "source, genesis, womb, uterus",
+            "def_en": ""
+        },
+        {
+            "iju": "valeo",
+            "en": "value, strength, worth, effective",
+            "def_en": ""
+        },
+        {
+            "iju": "vani",
+            "en": "vain, superficial, silly, foolish, trivial",
+            "def_en": ""
+        },
+        {
+            "iju": "vapo",
+            "en": "steam, vapor",
+            "def_en": ""
+        },
+        {
+            "iju": "vapora",
+            "en": "smoke",
+            "def_en": ""
+        },
+        {
+            "iju": "vasani",
+            "en": "glass, clear material",
+            "def_en": ""
+        },
+        {
+            "iju": "vasum",
+            "en": "package, packet, cup, vase",
+            "def_en": ""
+        },
+        {
+            "iju": "vende",
+            "en": "sell, sale",
+            "def_en": ""
+        },
+        {
+            "iju": "venera",
+            "en": "respect, veneration, respectful",
+            "def_en": ""
+        },
+        {
+            "iju": "verenota",
+            "en": "record, register, evidence",
+            "def_en": ""
+        },
+        {
+            "iju": "vese",
+            "en": "west",
+            "def_en": ""
+        },
+        {
+            "iju": "vila",
+            "en": "village, town",
+            "def_en": ""
+        },
+        {
+            "iju": "vino",
+            "en": "wine",
+            "def_en": ""
+        },
+        {
+            "iju": "visini",
+            "en": "neighborhood, close by, nearly, almost",
+            "def_en": ""
+        },
+        {
+            "iju": "voka",
+            "en": "voice, call, call out, summon",
+            "def_en": ""
+        },
+        {
+            "iju": "voko",
+            "en": "challenge, summon",
+            "def_en": ""
+        },
+        {
+            "iju": "vola",
+            "en": "fly, flight",
+            "def_en": ""
+        },
+        {
+            "iju": "dari",
+            "en": "three",
+            "def_en": ""
+        },
+        {
+            "iju": "de ~",
+            "en": "(ordinal marker)",
+            "def_en": ""
+        },
+        {
+            "iju": "duo",
+            "en": "two",
+            "def_en": ""
+        },
+        {
+            "iju": "ete",
+            "en": "eight",
+            "def_en": ""
+        },
+        {
+            "iju": "fio",
+            "en": "four",
+            "def_en": ""
+        },
+        {
+            "iju": "giga",
+            "en": "billion",
+            "def_en": ""
+        },
+        {
+            "iju": "keto",
+            "en": "hundred",
+            "def_en": ""
+        },
+        {
+            "iju": "kilo",
+            "en": "thousand",
+            "def_en": ""
+        },
+        {
+            "iju": "mega",
+            "en": "million",
+            "def_en": ""
+        },
+        {
+            "iju": "nin",
+            "en": "nine",
+            "def_en": ""
+        },
+        {
+            "iju": "numa",
+            "en": "number",
+            "def_en": ""
+        },
+        {
+            "iju": "seben",
+            "en": "seven",
+            "def_en": ""
+        },
+        {
+            "iju": "sen",
+            "en": "ten",
+            "def_en": ""
+        },
+        {
+            "iju": "sinko",
+            "en": "five",
+            "def_en": ""
+        },
+        {
+            "iju": "sita",
+            "en": "six",
+            "def_en": ""
+        },
+        {
+            "iju": "uno",
+            "en": "one",
+            "def_en": ""
+        },
+        {
+            "iju": "luse o fugo",
+            "en": "summer",
+            "def_en": ""
+        },
+        {
+            "iju": "luse o foli",
+            "en": "autumn",
+            "def_en": ""
+        },
+        {
+            "iju": "luse o jelu",
+            "en": "winter",
+            "def_en": ""
+        },
+        {
+            "iju": "luse o fiore",
+            "en": "spring (season)",
+            "def_en": ""
+        },
+        {
+            "iju": "noko",
+            "en": "noun",
+            "def_en": "Shortening of nomi o kosa"
+        },
+        {
+            "iju": "nomato",
+            "en": "verb",
+            "def_en": "Shortening of nomi o atoni"
+        },
+        {
+            "iju": "nolanoko",
+            "en": "adjective",
+            "def_en": "Shortening of nomi e lado nomi o kosa"
+        },
+        {
+            "iju": "nolanomato",
+            "en": "adverb",
+            "def_en": "Shortening of nomi e lado nomi o atoni"
+        },
+        {
+            "iju": "ponoko",
+            "en": "pronoun",
+            "def_en": ""
+        },
+        {
+            "iju": "apela",
+            "en": "apple",
+            "def_en": ""
+        },
+        {
+            "iju": "bifa",
+            "en": "beef",
+            "def_en": ""
+        },
+        {
+            "iju": "Bisutorata",
+            "en": "Bistrița",
+            "def_en": ""
+        },
+        {
+            "iju": "Budapesa",
+            "en": "Budapest",
+            "def_en": ""
+        },
+        {
+            "iju": "Conto",
+            "en": "Count",
+            "def_en": ""
+        },
+        {
+            "iju": "dola",
+            "en": "dollars",
+            "def_en": ""
+        },
+        {
+            "iju": "fone",
+            "en": "phone",
+            "def_en": ""
+        },
+        {
+            "iju": "foto",
+            "en": "photograph",
+            "def_en": ""
+        },
+        {
+            "iju": "korusifika",
+            "en": "crucifix",
+            "def_en": ""
+        },
+        {
+            "iju": "Dorakula",
+            "en": "Dracula",
+            "def_en": ""
+        },
+        {
+            "iju": "Angelin",
+            "en": "England",
+            "def_en": ""
+        },
+        {
+            "iju": "Furansu",
+            "en": "France, French",
+            "def_en": ""
+        },
+        {
+            "iju": "Joje",
+            "en": "George",
+            "def_en": ""
+        },
+        {
+            "iju": "Jeman",
+            "en": "German",
+            "def_en": ""
+        },
+        {
+            "iju": "mmm",
+            "en": "hmm",
+            "def_en": ""
+        },
+        {
+            "iju": "Jonatan",
+            "en": "Jonathan",
+            "def_en": ""
+        },
+        {
+            "iju": "Kalosenbug",
+            "en": "Klausenburg",
+            "def_en": ""
+        },
+        {
+            "iju": "lada",
+            "en": "ladder",
+            "def_en": ""
+        },
+        {
+            "iju": "London",
+            "en": "London",
+            "def_en": ""
+        },
+        {
+            "iju": "Munike",
+            "en": "Munich",
+            "def_en": ""
+        },
+        {
+            "iju": "pire",
+            "en": "pear",
+            "def_en": ""
+        },
+        {
+            "iju": "pulam",
+            "en": "plum",
+            "def_en": ""
+        },
+        {
+            "iju": "susa",
+            "en": "sous (French currency)",
+            "def_en": ""
+        },
+        {
+            "iju": "Vena",
+            "en": "Vienna",
+            "def_en": ""
+        }
+    ]
+}
