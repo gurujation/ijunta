@@ -1,6 +1,6 @@
 ## About Biline
 
-Biline is a single-file implementation of a bilingual autocomplete tool, helping people improve their ability to write in a secondary language without constantly referring to a dictionary.
+Biline is a single-file implementation of a bilingual rich text authoring tool, helping people improve their ability to write in a secondary language without constantly referring to a dictionary.
 
 In essence, it is a specialised autocomplete tool with inline vocabulary support. Simply start typing any word and wait for the pop-up to confirm the correct spelling or definition. If you cannot remember the word in your target language, you can prefix a source word with a colon to perform a reverse lookup.
 
