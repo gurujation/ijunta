@@ -1325,6 +1325,11 @@
             "def_en": ""
         },
         {
+            "iju": "derigo",
+            "en": "handle, aim, direct, steer",
+            "def_en": ""
+        },
+        {
             "iju": "dese",
             "en": "failure, fail",
             "def_en": ""
@@ -2660,6 +2665,11 @@
             "def_en": ""
         },
         {
+            "iju": "mutum",
+            "en": "loan, consideration",
+            "def_en": ""
+        },
+        {
             "iju": "musika",
             "en": "music",
             "def_en": ""
@@ -3832,122 +3842,127 @@
         {
             "iju": "apela",
             "en": "apple",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "bifa",
             "en": "beef",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Bisutorata",
             "en": "Bistrița",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Budapesa",
             "en": "Budapest",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Conto",
             "en": "Count",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "dola",
             "en": "dollars",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "fone",
             "en": "phone",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "foto",
             "en": "photograph",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "korusifika",
             "en": "crucifix",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Dorakula",
             "en": "Dracula",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Angelin",
             "en": "England",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Furansu",
             "en": "France, French",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Joje",
             "en": "George",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Jeman",
             "en": "German",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "mmm",
             "en": "hmm",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Jonatan",
             "en": "Jonathan",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Kalosenbug",
             "en": "Klausenburg",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "lada",
             "en": "ladder",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "London",
             "en": "London",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "Munike",
             "en": "Munich",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "pire",
             "en": "pear",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "pulam",
             "en": "plum",
-            "def_en": ""
+            "def_en": "Loan word"
         },
         {
             "iju": "susa",
             "en": "sous (French currency)",
-            "def_en": ""
+            "def_en": "Loan word"
+        },
+        {
+            "iju": "toropi",
+            "en": "tropical",
+            "def_en": "Loan word"
         },
         {
             "iju": "Vena",
             "en": "Vienna",
-            "def_en": ""
+            "def_en": "Loan word"
         }
     ]
 }
