@@ -112,7 +112,7 @@ kapo,head
 kipa,"keep, stay, remain, continue, remainder"
 kisa,"rest, quiet, reflect"
 kore,"heart, fundamental, core"
-kosa,"thing, something, stuff"
+kosa,"thing, something, stuff, item"
 lado,"side, adjacent, next to"
 laje,"big, great, large"
 leva,"level, elevate, rise"
@@ -136,7 +136,7 @@ nomi,"name, word"
 non,none (of)
 nota,"write, a writing"
 novi,"interesting, weird, strange (use -ma for miracle, rare)"
-novito,"interesting, weird, strange (use -ma for miracle, rare)"
+novito,"stranger, guest"
 nu,new
 nula,"nothing, zero"
 opesa,"money, wealth, riches"
@@ -258,6 +258,7 @@ dedua,"between, inter-"
 dekera,"right (direction + moral + legal), straight, orthodox"
 denta,"tooth, bite"
 deo,"god, divine"
+derigo,"handle, aim, direct, steer"
 dese,"failure, fail"
 deside,"abide, wait for, expect, hope"
 dia,"day, date"
@@ -286,6 +287,7 @@ edukate,"teach, educate, education, educated"
 egali,"equal, equality, equation, equally"
 ego,"self, own (adj)"
 eki,"out, ex-, away, external"
+ekimotu,"remove, discard, reject"
 ekina,"echo, reflection"
 ekusa,"horse, donkey, mule"
 elasi,"spring, coil, elastic, springy"
@@ -317,7 +319,7 @@ febere,"fever, feverish"
 feneta,"window, aperture"
 feo,ugly
 fero,"iron, steel"
-fiba,"fiber, string, thread, wire, ply, roughage, strand"
+fiba,"fiber, string, thread, rope, wire, ply, roughage, strand"
 fide,"faith, trust (n + v), loyal"
 fideni,"match, fit, conform"
 figura,"figure, form, shape, structure, statue, figurine"
@@ -349,6 +351,7 @@ guru,"teacher, expert, priest, guru"
 ia,"hear, listen, ear"
 idela,"idea, concept, conceptual, ideate"
 igem,"puzzle, enigma, riddle"
+iki,"hit, knock, strike"
 imbe,"rain, storm"
 impedi,"barrage, dam, block, impede, obstruct, hinder"
 imperi,"command, imperative, rule, empire, imperial"
@@ -362,6 +365,7 @@ intera,"as long as, while, meanwhile"
 intero,"examine, investigate, trace"
 inunda,"flood, torrent, inundate, overwhelm, overwhelming"
 iosa,"entitle, justify, right, merit"
+irisa,rainbow
 jage,"search, hunt, pursuit, seek, quest"
 janji,"answer, promise, vow, pledge, swear"
 janu,"door, gate"
@@ -386,7 +390,7 @@ kakajo,chocolate
 kalenda,"calendar, schedule, timetable, ledger"
 kaliga,shoe
 kalite,"evening, night"
-kama,bed
+kama,"bed, mat"
 kamala,bedroom
 kamale,hotel (orig. kamalela but shortened)
 kamalero,hotelier
@@ -408,6 +412,7 @@ kata,"cut, incision, slice, chop"
 katalin,"cross, intersection"
 katana,sword
 katera,"square, plaza"
+katio,"shake, harass, batter"
 kavena,"cave, cavern"
 keju,cheese
 keki,cake
@@ -510,8 +515,9 @@ minu,minute
 miro,"wonder, surprise, amaze"
 mise,"sad, unhappy, unfortunate, mourn"
 mito,"send, dispatch, direct, drive"
+mimori,"kill, murder, destroy"
 mogi,"fly, gnat, mosquito"
-mori,"death, die, dead, kill"
+mori,"death, die, dead"
 moti,"mess, disorder"
 motu,"move, movement, motion, movie, travel, journey"
 mudi,"purpose, goal, objective, aim, intent, target"
@@ -522,6 +528,7 @@ muro,wall
 muso,museum
 musika,music
 muta,"change, modify, modification, mutation"
+mutum,"loan, consideration"
 naga,"snake, slither"
 nase,nose
 nata,"cream, creamy"
@@ -553,6 +560,7 @@ orakulo,"predict, prophecy, prediction, prophetic"
 oranje,orange
 oro,"entreat, please, beg"
 oso,bone
+otadara,instead
 ovi,"lamb, sheep"
 ovo,egg
 pagina,"page, paper"
@@ -619,11 +627,13 @@ risa,rice
 risi,laugh
 rompe,"break, rupture, smash, disrupt"
 rosa,"pink, rose"
+rota,wheel
 ruja,red
 rusa,"chamber, room, partition, hall, camera"
 ruse,"trick, hoax, ruse, fraud, scam, tricky"
 saga,"story, narrate, fictional"
 saje,"wise, wisdom"
+sali,"leap, jump, bound"
 salo,"salt, salty, seasoning"
 salu,"hello, greet, greeting, salute"
 sange,"blood, bleed"
@@ -693,6 +703,7 @@ tore,"tower, skyscraper, turret, steeple, minaret"
 tori,bird
 tota,"whole, total"
 toti,"turtle, tortoise"
+tubu,"tube, straw, pipe"
 tume,"swelling, bulge"
 tunomi,"manage, assign, delegate"
 ubuntu,"kind, nice, humane, humaneness, solidarity"
@@ -713,6 +724,7 @@ valeo,"value, strength, worth, effective"
 vani,"vain, superficial, silly, foolish, trivial"
 vapo,"steam, vapor"
 vapora,smoke
+vasani,"glass, clear material"
 vasum,"package, packet, cup, vase"
 vende,"sell, sale"
 venera,"respect, veneration, respectful"
@@ -767,4 +779,5 @@ Munike [Loan],Munich
 pire [Loan],pear
 pulam [Loan],plum
 susa [Loan],sous (French currency)
+toropi [Loan],tropical
 Vena [Loan],Vienna
