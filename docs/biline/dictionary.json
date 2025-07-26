@@ -265,6 +265,11 @@
             "def_en": ""
         },
         {
+            "iju": "-pi, -ipi",
+            "en": "(marker of a person receiving an action or service)",
+            "def_en": "Example: sanopi = patient"
+        },
+        {
             "iju": "po",
             "en": "for, as",
             "def_en": ""
@@ -2180,6 +2185,11 @@
             "def_en": ""
         },
         {
+            "iju": "kipi",
+            "en": "receiver, host",
+            "def_en": ""
+        },
+        {
             "iju": "kite",
             "en": "leave, quit, abandon, exit",
             "def_en": ""
@@ -2645,6 +2655,11 @@
             "def_en": ""
         },
         {
+            "iju": "mumira",
+            "en": "visit, vacation, holiday",
+            "def_en": ""
+        },
+        {
             "iju": "mundo",
             "en": "world, globe, global, international",
             "def_en": ""
@@ -2665,11 +2680,6 @@
             "def_en": ""
         },
         {
-            "iju": "mutum",
-            "en": "loan, consideration",
-            "def_en": ""
-        },
-        {
             "iju": "musika",
             "en": "music",
             "def_en": ""
@@ -2677,6 +2687,11 @@
         {
             "iju": "muta",
             "en": "change, modify, modification, mutation",
+            "def_en": ""
+        },
+        {
+            "iju": "mutum",
+            "en": "loan, consideration",
             "def_en": ""
         },
         {
@@ -2702,6 +2717,11 @@
         {
             "iju": "navi",
             "en": "boat, ship",
+            "def_en": ""
+        },
+        {
+            "iju": "nepo",
+            "en": "descendent, grandchild",
             "def_en": ""
         },
         {
@@ -3842,127 +3862,122 @@
         {
             "iju": "apela",
             "en": "apple",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "bifa",
             "en": "beef",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Bisutorata",
             "en": "Bistrița",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Budapesa",
             "en": "Budapest",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Conto",
             "en": "Count",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "dola",
             "en": "dollars",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "fone",
             "en": "phone",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "foto",
             "en": "photograph",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "korusifika",
             "en": "crucifix",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Dorakula",
             "en": "Dracula",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Angelin",
             "en": "England",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Furansu",
             "en": "France, French",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Joje",
             "en": "George",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Jeman",
             "en": "German",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "mmm",
             "en": "hmm",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Jonatan",
             "en": "Jonathan",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Kalosenbug",
             "en": "Klausenburg",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "lada",
             "en": "ladder",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "London",
             "en": "London",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Munike",
             "en": "Munich",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "pire",
             "en": "pear",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "pulam",
             "en": "plum",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "susa",
             "en": "sous (French currency)",
-            "def_en": "Loan word"
-        },
-        {
-            "iju": "toropi",
-            "en": "tropical",
-            "def_en": "Loan word"
+            "def_en": ""
         },
         {
             "iju": "Vena",
             "en": "Vienna",
-            "def_en": "Loan word"
+            "def_en": ""
         }
     ]
 }
