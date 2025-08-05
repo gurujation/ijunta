@@ -198,6 +198,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js" integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.27.3/trumbowyg.min.js" integrity="sha512-YJgZG+6o3xSc0k5wv774GS+W1gx0vuSI/kr0E0UylL/Qg/noNspPtYwHPN9q6n59CTR/uhgXfjDXLTRI+uIryg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>    
+      function isObject(obj) {
+        var type = typeof obj;
+        return type === 'function' || type === 'object' && !!obj;
+      };
+      
+      function isSet(el) {
+        return typeof el !== 'undefined' && el;
+      }
+
+      function isFalse(el) {
+        return el === false || el === "false";
+      }
+
       $(document).ready(function() {
         // OPTIONS
         let options = {
@@ -208,6 +221,7 @@
         
         // Global variables
         let dictionary = [];
+        let prefixes = [];
         let tips = [];
         let dictSource = '';
         let textEditorObject = '#textEditor';
@@ -257,19 +271,6 @@
           } catch (e) {}
         }
 
-        function isObject(obj) {
-          var type = typeof obj;
-          return type === 'function' || type === 'object' && !!obj;
-        };
-        
-        function isSet(el) { 
-          return typeof el !== 'undefined' && el;
-        }
-
-        function isFalse(el) {
-          return el === false || el === "false";
-        }
-
         function loadDictionary() {
           $('#statusText').text('Loading dictionary...');
           $.ajax({
@@ -298,11 +299,12 @@
               registerLanguages();
               
               // parse settings
-              if (isObject(data.settings)) {                
+              if (isObject(data.settings)) {    
                 if (isSet(data.settings.ref)) { $('#refLang').val(data.settings.ref); }
                 if (isSet(data.settings.target)) { $('#targetLang').val(data.settings.target); }
                 if (isFalse(data.settings.showChooser)) { $('#language-selector').hide(); }
                 if (isFalse(data.settings.showTips)) { $('#tips-container').hide(); $('#main').addClass('col-md-12').removeClass('col-md-9'); }
+                if (isSet(data.settings.prefixes) && Array.isArray(data.settings.prefixes)) { prefixes = data.settings.prefixes; }
               }
               
               setTimeout(() => updateStatus(), options.updatePeriod);
@@ -461,7 +463,7 @@
             hideSuggestions();
             return;
           }
-          suggestions = findMatches(searchTerm);
+          suggestions = findUnprefixedMatches(searchTerm);
           if (suggestions.length === 0) {
             hideSuggestions();
             return;
@@ -476,7 +478,31 @@
           }, options.popupDelay);
         }
 
-        function findMatches(searchTerm) {
+        function findUnprefixedMatches(searchTerm, limit=7) {
+          allMatches = []; wordMatches = [];
+          
+          // standard match first
+          wordMatches = findMatches(searchTerm, -1);
+          allMatches = [...allMatches, ...wordMatches];
+          
+          // supplement with prefix matches
+          if (prefixes) {
+            $.each(prefixes, function(index, value) {
+              if (searchTerm.toLowerCase().match(`^${value}`)) {
+                wordMatches = findMatches(searchTerm.substring(value.length), -1, value);
+                allMatches = [...allMatches, ...wordMatches];
+              }
+            });
+          }
+ 
+          if (limit > 0) {
+            return allMatches.slice(0, 7);
+          } else {
+            return allMatches;
+          }
+        }
+
+        function findMatches(searchTerm, limit=7, prefix='') {
           const targetLang = $('#targetLang').val();
           const refLang = $('#refLang').val();
           const searchLower = searchTerm.toLowerCase();
@@ -486,19 +512,22 @@
           $.each(dictionary, function(index, entry) {
             if (isColonSearch) {
               // Search in reference language from first char only
-              if (entry[refLang] && entry[refLang].toLowerCase().match(`^${searchLower}|[,;\\/\\s]+${searchLower}`)) {
-                wordMatches.push(entry);
+              if (entry[refLang] && entry[refLang].toLowerCase().match(`^${searchLower}|[,;\\/\\s]+${searchLower}`)) {    
+                match = { ...entry }; match.prefix = prefix;
+                wordMatches.push(match);
               // Definitions can match anywhere but are low priority
-              } else if (entry[`def_${refLang}`] && entry[`def_${refLang}`].toLowerCase().includes(searchLower)) {
-                
-                defMatches.push(entry);
+              } else if (entry[`def_${refLang}`] && entry[`def_${refLang}`].toLowerCase().includes(searchLower)) {                
+                match = { ...entry }; match.prefix = prefix;
+                defMatches.push(match);
               }
             } else {
               // Search in target language
               if (entry[targetLang] && entry[targetLang].toLowerCase().match(`^${searchLower}|[,;\\/\\s]+${searchLower}`)) {
-                wordMatches.push(entry);
+                match = { ...entry }; match.prefix = prefix;
+                wordMatches.push(match);
               } else if (entry[`def_${targetLang}`] && entry[`def_${targetLang}`].toLowerCase().includes(searchLower)) {
-                defMatches.push(entry);
+                match = { ...entry }; match.prefix = prefix;
+                defMatches.push(match);
               }
             }
           });
@@ -512,7 +541,11 @@
           
           // Combine matches, prioritizing word matches
           const allMatches = [...wordMatches, ...defMatches];
-          return allMatches.slice(0, 7);
+          if (limit > 0) {
+            return allMatches.slice(0, limit);
+          } else {
+            return allMatches;
+          }
         }
 
         function renderSuggestions() {
@@ -664,7 +697,7 @@
           if (index < 0 || index >= suggestions.length) return;
           const entry = suggestions[index];
           const targetLang = $('#targetLang').val();
-          const targetWord = entry[targetLang] || '';
+          const targetWord = entry?.prefix + entry[targetLang] || '';
           
           // Replace the current word with the selected suggestion
           const $editor = $(textEditorObject);
