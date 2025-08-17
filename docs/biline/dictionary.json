@@ -3,7 +3,8 @@
         "target": "iju",
         "ref": "en",
         "showChooser": false,
-        "showTips": true
+        "showTips": true,
+        "prefixes" : ["i", "in", "u", "us"]
     },
     "tips": [
         {
@@ -706,7 +707,7 @@
         },
         {
             "iju": "non",
-            "en": "none (of)",
+            "en": "none (of), un-",
             "def_en": ""
         },
         {
@@ -767,6 +768,11 @@
         {
             "iju": "peso",
             "en": "piece, part, component",
+            "def_en": ""
+        },
+        {
+            "iju": "pilo",
+            "en": "ball, sphere",
             "def_en": ""
         },
         {
@@ -886,7 +892,7 @@
         },
         {
             "iju": "vasa",
-            "en": "water",
+            "en": "water, wet",
             "def_en": ""
         },
         {
@@ -990,6 +996,11 @@
             "def_en": ""
         },
         {
+            "iju": "agifoli",
+            "en": "grass",
+            "def_en": ""
+        },
+        {
             "iju": "agila",
             "en": "eagle, hawk, a bird of prey",
             "def_en": ""
@@ -1027,6 +1038,11 @@
         {
             "iju": "akuso",
             "en": "accuse, accusation, charge (legal)",
+            "def_en": ""
+        },
+        {
+            "iju": "aleja",
+            "en": "surely, certain, definite, indisputable",
             "def_en": ""
         },
         {
@@ -1186,7 +1202,7 @@
         },
         {
             "iju": "banda",
-            "en": "band, strip, ribbon, tape, stripe",
+            "en": "band, strip, ribbon, tape, stripe, channel",
             "def_en": ""
         },
         {
@@ -1640,6 +1656,11 @@
             "def_en": ""
         },
         {
+            "iju": "fibakapa",
+            "en": "net, mesh, web",
+            "def_en": ""
+        },
+        {
             "iju": "fide",
             "en": "faith, trust (n + v), loyal",
             "def_en": ""
@@ -1812,6 +1833,11 @@
         {
             "iju": "imperi",
             "en": "command, imperative, rule, empire, imperial",
+            "def_en": ""
+        },
+        {
+            "iju": "imperiro",
+            "en": "governor, governess, mayor",
             "def_en": ""
         },
         {
@@ -2201,7 +2227,7 @@
         },
         {
             "iju": "kitum",
-            "en": "excited, aroused",
+            "en": "excited, aroused, (turn) on",
             "def_en": ""
         },
         {
@@ -2316,7 +2342,7 @@
         },
         {
             "iju": "laboro",
-            "en": "work, labor, hard-working, job",
+            "en": "work, labor, hard-working, job, task",
             "def_en": ""
         },
         {
@@ -2495,6 +2521,11 @@
             "def_en": ""
         },
         {
+            "iju": "lumedu",
+            "en": "shining, glistening",
+            "def_en": ""
+        },
+        {
             "iju": "lumen",
             "en": "star, highlight (n + v), celebrity",
             "def_en": ""
@@ -2641,7 +2672,7 @@
         },
         {
             "iju": "motu",
-            "en": "move, movement, motion, movie, travel, journey",
+            "en": "move, movement, motion, movie, travel, journey, go (somewhere)",
             "def_en": ""
         },
         {
@@ -2830,6 +2861,11 @@
             "def_en": ""
         },
         {
+            "iju": "openi",
+            "en": "fancy, diversion, whim",
+            "def_en": ""
+        },
+        {
             "iju": "ora",
             "en": "hour, o'clock, clock time",
             "def_en": ""
@@ -2901,7 +2937,7 @@
         },
         {
             "iju": "pate",
-            "en": "open",
+            "en": "open, loose",
             "def_en": ""
         },
         {
@@ -2966,7 +3002,7 @@
         },
         {
             "iju": "peri",
-            "en": "cover, close, shut, seal",
+            "en": "cover, close, shut, seal, tight",
             "def_en": ""
         },
         {
@@ -3466,7 +3502,7 @@
         },
         {
             "iju": "tado",
-            "en": "stop, halt",
+            "en": "stop, halt, (turn) off",
             "def_en": ""
         },
         {
@@ -3596,7 +3632,7 @@
         },
         {
             "iju": "ujana",
-            "en": "young, youth, a youth",
+            "en": "young, youth, a youth, early",
             "def_en": ""
         },
         {
@@ -3606,7 +3642,7 @@
         },
         {
             "iju": "umbe",
-            "en": "shadow, shade, obscure, hide, hidden",
+            "en": "shadow, shade, obscure, hide, hidden, private, secret",
             "def_en": ""
         },
         {
@@ -3627,6 +3663,11 @@
         {
             "iju": "unode",
             "en": "sensei, master (of), professional",
+            "def_en": ""
+        },
+        {
+            "iju": "unota",
+            "en": "another",
             "def_en": ""
         },
         {
@@ -3967,6 +4008,11 @@
         {
             "iju": "pulam",
             "en": "plum",
+            "def_en": ""
+        },
+        {
+            "iju": "rato",
+            "en": "mouse, rat",
             "def_en": ""
         },
         {
