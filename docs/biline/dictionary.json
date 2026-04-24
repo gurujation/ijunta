@@ -186,6 +186,11 @@
             "def_en": "(interrogative)"
         },
         {
+            "iju": "kavaleo",
+            "en": "how much",
+            "def_en": "(interrogative)"
+        },
+        {
             "iju": "ke",
             "en": "that",
             "def_en": " (complementizer)"
@@ -224,6 +229,16 @@
             "iju": "me",
             "en": "(potential/hypothetical marker)",
             "def_en": "(use with -ma suffix for jussive/imperative)"
+        },
+        {
+            "iju": "meda",
+            "en": "should be",
+            "def_en": "(object / nominal complement)"
+        },
+        {
+            "iju": "mede",
+            "en": "should be",
+            "def_en": "(adj / adv complement)"
         },
         {
             "iju": "mi",
@@ -563,6 +578,11 @@
         {
             "iju": "kaja",
             "en": "box",
+            "def_en": ""
+        },
+        {
+            "iju": "kajosa",
+            "en": "cupboard, wardrobe, chest, drawers",
             "def_en": ""
         },
         {
@@ -946,6 +966,11 @@
             "def_en": ""
         },
         {
+            "iju": "e tempo",
+            "en": "for a while, for some time",
+            "def_en": ""
+        },
+        {
             "iju": "aba",
             "en": "tree, wood, grow (v)",
             "def_en": ""
@@ -986,6 +1011,11 @@
             "def_en": ""
         },
         {
+            "iju": "afabe",
+            "en": "alphabet",
+            "def_en": ""
+        },
+        {
             "iju": "agi",
             "en": "field, farm",
             "def_en": ""
@@ -1023,6 +1053,11 @@
         {
             "iju": "ajenda",
             "en": "program, agenda, plan, computer program",
+            "def_en": ""
+        },
+        {
+            "iju": "alero",
+            "en": "most, -est",
             "def_en": ""
         },
         {
@@ -1318,6 +1353,16 @@
         {
             "iju": "dara",
             "en": "stand, place, be firm, position",
+            "def_en": ""
+        },
+        {
+            "iju": "daradu",
+            "en": "existence, placement",
+            "def_en": ""
+        },
+        {
+            "iju": "dararo",
+            "en": "entity, exemplar, figure",
             "def_en": ""
         },
         {
@@ -2556,6 +2601,11 @@
             "def_en": ""
         },
         {
+            "iju": "makul'e bon",
+            "en": "bless, bestow, consecrate",
+            "def_en": ""
+        },
+        {
             "iju": "malum",
             "en": "fate, destiny",
             "def_en": ""
@@ -2563,6 +2613,11 @@
         {
             "iju": "mandi",
             "en": "jaw, mandible",
+            "def_en": ""
+        },
+        {
+            "iju": "mapoten",
+            "en": "danger, beware, hazard",
             "def_en": ""
         },
         {
@@ -2578,6 +2633,11 @@
         {
             "iju": "masafigura",
             "en": "information, message",
+            "def_en": ""
+        },
+        {
+            "iju": "masali",
+            "en": "dance",
             "def_en": ""
         },
         {
@@ -2801,6 +2861,11 @@
             "def_en": ""
         },
         {
+            "iju": "nopase",
+            "en": "annoy, irritate",
+            "def_en": ""
+        },
+        {
             "iju": "noranko",
             "en": "common",
             "def_en": ""
@@ -2853,6 +2918,11 @@
         {
             "iju": "oko",
             "en": "eye, glance, one's sight",
+            "def_en": ""
+        },
+        {
+            "iju": "okuru",
+            "en": "dart, arrow",
             "def_en": ""
         },
         {
@@ -2917,7 +2987,7 @@
         },
         {
             "iju": "pari",
-            "en": "bet, wager, gamble, risk, maybe, chance",
+            "en": "bet, wager, gamble, risk, maybe, chance, luck",
             "def_en": ""
         },
         {
@@ -3201,8 +3271,18 @@
             "def_en": ""
         },
         {
+            "iju": "rima",
+            "en": "rhyme, poem, rhythm, meter (beat)",
+            "def_en": ""
+        },
+        {
             "iju": "rio",
             "en": "river, stream",
+            "def_en": ""
+        },
+        {
+            "iju": "riosan",
+            "en": "toilet, bathroom",
             "def_en": ""
         },
         {
@@ -3301,6 +3381,11 @@
             "def_en": ""
         },
         {
+            "iju": "satidu",
+            "en": "size, amount",
+            "def_en": ""
+        },
+        {
             "iju": "sava",
             "en": "save, rescue, salvation, salvage, retrieve",
             "def_en": ""
@@ -3323,6 +3408,11 @@
         {
             "iju": "seki",
             "en": "next, follow, subsequent, succeeding",
+            "def_en": ""
+        },
+        {
+            "iju": "sekidia",
+            "en": "tomorrow",
             "def_en": ""
         },
         {
@@ -3576,6 +3666,11 @@
             "def_en": ""
         },
         {
+            "iju": "tiradu",
+            "en": "attraction, charm",
+            "def_en": ""
+        },
+        {
             "iju": "tira",
             "en": "pull, tug",
             "def_en": ""
@@ -3746,6 +3841,11 @@
             "def_en": ""
         },
         {
+            "iju": "vianomi",
+            "en": "translate, translation",
+            "def_en": ""
+        },
+        {
             "iju": "vila",
             "en": "village, town",
             "def_en": ""
@@ -3874,6 +3974,41 @@
             "iju": "luse o fiore",
             "en": "spring (season)",
             "def_en": ""
+        },
+        {
+            "iju": "lundia",
+            "en": "Monday",
+            "def_en": "(moon-day)"
+        },
+        {
+            "iju": "fudia",
+            "en": "Tuesday",
+            "def_en": "(fire-day)"
+        },
+        {
+            "iju": "vadia",
+            "en": "Wednesday",
+            "def_en": "(water-day)"
+        },
+        {
+            "iju": "badia",
+            "en": "Thursday",
+            "def_en": "(wood-day)"
+        },
+        {
+            "iju": "jindia",
+            "en": "Friday",
+            "def_en": "(gold-day)"
+        },
+        {
+            "iju": "tiradia",
+            "en": "Saturday",
+            "def_en": "(earth-day)"
+        },
+        {
+            "iju": "sondia",
+            "en": "Sunday",
+            "def_en": "(sun-day)"
         },
         {
             "iju": "noko",
@@ -4024,7 +4159,11 @@
             "iju": "Vena",
             "en": "Vienna",
             "def_en": ""
+        },
+        {
+            "iju": "Kurisato",
+            "en": "Christ",
+            "def_en": ""
         }
     ]
-
 }
