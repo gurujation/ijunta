@@ -30,18 +30,22 @@ kakosa,why (interrogative)
 kaloke,where (interrogative)
 kano,which (interrogative)
 kanun,when (interrogative)
+kavaleo,how much (interrogative)
 ke,that (complementizer)
 ki,"which, who (complementizer)"
 kide,"which is, which of, whose"
 kon,with
 "-la, -ela","(indicates a type of place or situation, ie vendela = shop)"
 "-le, -ale","(pluraliser, creates a group noun - optional)"
-"-ma, -mia","(intensify a verb, ie vola = fly, volama = zoom)"
+"-ma, -mia","(intensify a word, ie vola = fly, volama = zoom)"
 me,(marker for potential/hypothetical; use with -ma suffix of for jussive/imperative)
+meda,should be (object / nominal complement)
+mede,should be (adj / adv complement)
 mi,"I, me, (first person)"
 miale,"we, us"
 mialo,our
 mio,my
+mu-,"(used as a frequentative modifier, ie mumira = ""many see"" = holiday, musali = ""many jumps"" = dance)"
 "-ni, -i","(objects of a type or kind, often diminutive, template for color naming)"
 no,"no, not"
 o,(associative relationship)
@@ -50,7 +54,7 @@ pero,"but, except"
 po,"for, as"
 "-re, -ure",(mark a verb as passive voice)
 "-ro, -ero","(marker of a person with a role or profession, eg sanoro = doctor)"
-sama,"as, than, like, similar (as adjective)"
+sama,"as, than, like"
 se,"if, whether"
 se … posi,if … then
 si,"he, she, it (third person)"
@@ -65,13 +69,13 @@ tualo,your (plural)
 tuo,your
 u,"or, either"
 "u-, us-","(marker for verbs as permissive, ie can/able to; use with -ma for hortative)"
-usi,"can (contextual, only with noun or implied main verb)"
+usi,"can, be/do (contextual, only with noun or implied main verb)"
 uside,"could be, might be (contextual, only with noun or nominal complement)"
 usidema,"had to be, should be (contextual, only with noun or nominal complement)"
-usima,"ought (contextual, only with implied main verb)"
+usima,"ought, be/do (emphatic) (contextual, only with implied main verb)"
 me usima,"must (contextual, only with implied main verb)"
 vida,over there
-ado,"bring, apply"
+ado,"bring, apply, impact"
 ale,"all, everything"
 aliki,"some, few, an indefinite amount, somewhat"
 alikito,someone
@@ -88,7 +92,7 @@ dafem,she (only where gender relevant)
 daviro,he (only where gender relevant)
 debe,"debt, owe, burden, obligation"
 demo,"demonstration, indicate, show"
-dikosa,"reason, cause, explanation"
+dikosa,"reason, cause, explanation, case"
 dona,"give, gift, offer"
 duro,"hard, difficult, problem"
 eleki,"electric, electricity"
@@ -106,6 +110,7 @@ jelu,"cool, cold"
 junta,"join, group, together"
 jura,"law, judge (v), rule, instruction"
 kaja,box
+kajosa,"cupboard, wardrobe, chest, drawers"
 kaka,"feces, s***"
 kali,"dark, black"
 kan,"able, ability"
@@ -182,6 +187,7 @@ vole,"want, need, desire"
 e junta,"and so, and as a result"
 e pende,"at the time that, when"
 e punto,"sometimes, occasionally, right now"
+e tempo,"for a while, for some time"
 aba,"tree, wood, grow (v)"
 abuso,"abuse, violate, assault, abusive"
 adaro,"prepare, organize, make ready"
@@ -190,11 +196,12 @@ adere,"adhere, stick, cling, sticky, glue"
 adio,"bye, farewell, valediction"
 adono,"get, receive"
 adora,"praise, venerate"
+afabe,alphabet
 agi,"field, farm"
 agifase,"cultivate, agriculture"
 agifoli,grass
 agila,"eagle, hawk, a bird of prey"
-agon,"contest, race, compete"
+agon,"contest, match, race, compete"
 aje,"age (n + v), eon, aged"
 ajen,gray
 ajenda,"program, agenda, plan, computer program"
@@ -202,6 +209,7 @@ akeri,"sharp, acute, keen"
 akuro,"accurate, precise, precision, exact, meticulous"
 akuso,"accuse, accusation, charge (legal)"
 aleja,"surely, certain, definite, indisputable"
+alero,"most, -est"
 alio,"garlic, onion"
 ameno,"amuse, entertain, fun, entertainment, grand"
 amiko,"friend, acquaintance, befriend, friendly"
@@ -251,12 +259,15 @@ bileta,"ticket, a pass, bill, banknote"
 bira,"beer, ale"
 boba,"bubble, boil"
 bola,bowl
+bonteni,"hug, embrace"
 bonveni,"welcome (lit. ""good comings!"")"
 bovi,"cow, bovine, steer, ox, bison, buffalo"
 bubo,owl
 buku,book
 danke,"thanks, to thank, thankful"
 dara,"stand, place, be firm, position"
+daradu,"existence, placement"
+dararo,"entity, exemplar, figure"
 debile,"weak, weakness, feeble, sick"
 dedua,"between, inter-"
 dekera,"right (direction + moral + legal), straight, orthodox"
@@ -412,6 +423,7 @@ kaparuse,trap
 kara,"meat, flesh"
 kare,"lose, loss"
 karo,"car, vehicle, drive"
+karo en banda,"train, locomotive"
 kasa,"house, building"
 kasi,almost
 kata,"cut, incision, slice, chop"
@@ -466,7 +478,6 @@ lagima,"tears, cry (v)"
 lago,"lake, loch, pond"
 laki,"milk, milky"
 lakon,"short (length), curt, brief"
-lumedu,"shining, glistening"
 lamen,"sorry (n + v), contrition, remorse"
 lamina,"plate, dish"
 lana,wool
@@ -499,14 +510,17 @@ lokum,"placement, rank, status, order"
 lonje,"far, distance, remote, extreme"
 lubi,"slip, slide, slippery, glide"
 lumen,"star, highlight (n + v), celebrity"
+lumedu,"shining, glistening"
 lunon,"month, monthly"
 lupo,wolf
-maje,"mr., ms., sir, madam, lord, master"
+maje,"Mr, Ms, sir, madam, lord, master"
 makina,"machine, engine, device, appliance"
 makula,"mark, stain, blemish, spot"
+makul'e bon,"bless, bestow, consecrate"
 malum,"fate, destiny"
 mandi,"jaw, mandible"
 mare,"ocean, sea, marine"
+mapoten,"danger, beware, hazard"
 masa,"mass, pile, heap, amass, massive"
 masafigura,"information, message"
 masama,"bigger, more than, expanded, extra"
@@ -528,16 +542,17 @@ mogi,"fly, gnat, mosquito"
 mori,"death, die, dead"
 moti,"mess, disorder"
 motu,"move, movement, motion, movie, travel, journey, go (somewhere)"
-mudi,"purpose, goal, objective, aim, intent, target"
+mudi,"purpose, goal, objective, aim, intent, target, meaning"
 muijen,grandparent
 mumira,"visit, vacation, holiday"
 mundo,"world, globe, global, international"
 munera,"service, fee, compensation, favour"
+masali,dance
 muro,wall
 muso,museum
+mutum,"loan, consideration"
 musika,music
 muta,"change, modify, modification, mutation"
-mutum,"loan, consideration"
 naga,"snake, slither"
 nase,nose
 nata,"cream, creamy"
@@ -553,6 +568,7 @@ nobi,"lump, button, knob, stud"
 noga,leg
 nomile,sentence
 nonun,never
+nopase,"annoy, irritate"
 noranko,common
 nore,north
 nube,"cloud, cloudy"
@@ -564,6 +580,7 @@ nun,now
 odasi,"audacity, dare, daring, bold, brave"
 odi,"hate, hatred, enmity, evil"
 oko,"eye, glance, one's sight"
+okuru,"dart, arrow"
 ole,"oil, unctuous"
 openi,"fancy, diversion, whim"
 ora,"hour, o'clock, clock time"
@@ -576,7 +593,7 @@ ovi,"lamb, sheep"
 ovo,egg
 pagina,"page, paper"
 papilon,"butterfly, moth"
-pari,"bet, wager, gamble, risk, maybe, chance"
+pari,"bet, wager, gamble, risk, maybe, chance, luck"
 pase,"peace, peaceful"
 pasu,"step, stride, pace, ride"
 patata,potato
@@ -628,12 +645,14 @@ refera,"relate, relation, relationship, connection, connect with"
 refere,"refer to, reference, mention, allusion"
 reki,"sit, seat, chair, relax, rest"
 relijon,"religion, religious"
+rima,"rhyme, poem, rhythm, meter (beat)"
 rena,kidney
 repare,"fix, correction, improvement, repair, mend"
 resolu,"decide, decision, adjudicate, resolve, settle"
 retine,"memory, remember"
 reveni,"come back, return"
 rio,"river, stream"
+riosan,"toilet, bathroom"
 risa,rice
 risi,laugh
 rompe,"break, rupture, smash, disrupt"
@@ -652,12 +671,14 @@ sano,"health, healthy, heal"
 sanomanja,"medicine, tablets"
 sapiro,"breathe, breath"
 sakin,"bag, luggage, sack, burden"
-sati,"full, fill, whole"
+sati,"full, fill, whole, satisfy"
+satidu,"size, amount"
 sava,"save, rescue, salvation, salvage, retrieve"
 savon,soap
 sedo,"surrender, submit, yield, give in, submission"
 sefe,"wind, windy"
 seki,"next, follow, subsequent, succeeding"
+sekidia,tomorrow
 sekin,"ax, hatchet, machete, chop, cleave"
 seko,"divide, split, division, separate, apart, hole"
 sekon,second (time)
@@ -704,17 +725,19 @@ teni,"hold, grasp, cling to"
 tensa,"tense (action + state + grammar), stretch, strained"
 tenta,"try, attempt, experiment, trial, tentative, provisional"
 tenu,"narrow, thin, strait"
+tenadu,"delicate, wispy"
 tetum,"ceiling, roof"
 tingi,"high, tall, height"
 tipo,"type, quality, kind, typical"
 tiponi,"example, specimen"
 tira,"pull, tug"
+tiradu,"attraction, charm"
 tivi,"TV, television"
 tore,"tower, skyscraper, turret, steeple, minaret"
 tori,bird
 tota,"whole, total"
-toti,"turtle, tortoise"
 tubu,"tube, straw, pipe"
+toti,"turtle, tortoise"
 tume,"swelling, bulge"
 tunomi,"manage, assign, delegate"
 ubuntu,"kind, nice, humane, humaneness, solidarity"
@@ -726,11 +749,11 @@ umero,"shoulder, shrug"
 umu,"low, bottom, depressed, press"
 unda,"wave, undulation, vibrate"
 unode,"sensei, master (of), professional"
-unota,another
 ungu,"nail, hoof, claw"
+unota,another
 unun,ever
 usedo,hungry
-usu,"practice, skill"
+usu,"practice, skill, art"
 utero,"source, genesis, womb, uterus"
 valeo,"value, strength, worth, effective"
 vani,"vain, superficial, silly, foolish, trivial"
@@ -742,6 +765,7 @@ vende,"sell, sale"
 venera,"respect, veneration, respectful"
 verenota,"record, register, evidence"
 vese,west
+vianomi,translate
 vila,"village, town"
 vino,wine
 visini,"neighborhood, close by, nearly, almost"
@@ -768,6 +792,13 @@ luse o fugo,summer
 luse o foli,autumn
 luse o jelu,winter
 luse o fiore,spring (season)
+lundia,Monday (moon-day)
+fudia,Tuesday (fire-day)
+vadia,Wednesday (water-day)
+badia,Thursday (wood-day
+jindia,Friday (gold-day)
+tiradia,Saturday (earth-day)
+sondia,Sunday (sun-day)
 noko = nomi o kosa,noun
 nomato = nomi o atoni,verb
 nolanoko = nomi e lado nomi o kosa,adjective
@@ -775,22 +806,28 @@ nolanomato = nomi e lado nomi o atoni,adverb
 ponoko,pronoun
 apela [Loan],apple
 bifa [Loan],beef
+Bisutorata [Loan],Bistri?a
+Budapesa [Loan],Budapest
 Conto [Loan],Count
+dola [Loan],dollars
 fone [Loan],phone
 foto [Loan],photograph
 korusifika [Loan],crucifix
+Dorakula [Loan],Dracula
 Angelin [Loan],England
 Furansu [Loan],"France, French"
 Joje [Loan],George
 Jeman [Loan],German
 mmm [Loan],hmm
 Jonatan [Loan],Jonathan
+Kalosenbug [Loan],Klausenburg
 lada [Loan],ladder
 London [Loan],London
 Munike [Loan],Munich
 pire [Loan],pear
 pulam [Loan],plum
-rato,"mouse, rat"
+rato [Loan],"mouse, rat"
 susa [Loan],sous (French currency)
 toropi [Loan],tropical
 Vena [Loan],Vienna
+Kurisato [Loan],Christ
